@@ -1,23 +1,8 @@
-body { 
-			background: #040706;	
+body { 	
+			background: #eeeeee;
 			margin: 0;
 		}
-.content {
-	width: 1440px;
-	height: 802px;
-	background: #eeeeee;
-	border-radius: 0 0 3px 3px;
-}
-.photocard {
-			display: block;
-			width: 134px;
-			height: 133px;
-			border-radius: 10px;
-			margin: auto;
-			margin-top: 17px;
-			margin-bottom: 15px; 
-		}
-.vizitka {
+.user-card {
 			width: 384px;
 			height: 629px;
 			background: #ffffff;
@@ -28,6 +13,15 @@ body {
 			padding: 54px 64px 68px 64px;
 			box-shadow: 0 0 5px #666;
 			font-weight: 500;
+		}		
+.photocard {
+			display: block;
+			width: 134px;
+			height: 133px;
+			border-radius: 10px;
+			margin: auto;
+			margin-top: 17px;
+			margin-bottom: 15px; 
 		}
 h1 {
 			text-align: center;
@@ -35,13 +29,11 @@ h1 {
 			margin: 0;
 		}
 a {margin-left: 13px;}
-.hr1 {margin-top: 19px;}
-.hr2 {margin-top: 20px;}
-.p1 {margin: 15px 13px 16px;}
-.p2 {margin: 29px 13px 18px;}
-.p3 {margin: 29px 13px 10px;}
-.p4 {margin: 14px 13px;}
-.p5 {margin: 39px 13px 15px 13px;}
-.p6 {margin: 29px 13px 13px;}
-.p7 {margin-left: 13px;}
+.work {margin: 15px 13px 16px;}
+.want_to_learn {margin: 29px 13px 18px;}
+.contacts {margin: 29px 13px 10px;}
+.phone_number {margin: 14px 13px;}
+.vk_profile {margin: 39px 13px 15px 13px;}
+.feedback {margin: 29px 13px 13px;}
+.my_feedback {margin-left: 13px;}
 
