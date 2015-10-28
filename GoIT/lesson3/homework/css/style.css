@@ -25,6 +25,8 @@ body{
 	padding-top: 50px;
 }
 .menu{
+	position: relative;
+	overflow: hidden;
 	margin-top: 40px;
 	background: #5e5e5e; /* Old browsers */
 	background: -moz-linear-gradient(top,  #5e5e5e 0%, #444343 100%); /* FF3.6+ */
@@ -35,7 +37,7 @@ body{
 	background: linear-gradient(to bottom,  #5e5e5e 0%,#444343 100%); /* W3C */
 }
 .menu li{
-	display: inline-block;
+	float: left;
 	list-style: none;
 }
 .menu a{
@@ -44,7 +46,9 @@ body{
 	line-height: 40px;
 	text-decoration: none;
 	padding: 0 40px;
-	font-size: 14.67px;
+	font-size: 15px;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
 }
 .menu a:hover{
 	background: #4a4a4a; /* Old browsers */
@@ -82,8 +86,10 @@ body{
 	display: block;
 	padding-left: 20px;
 	line-height: 35px;
+	font-size: 13px;
 	text-decoration: none;
 	color: #656363;
+	transition: 0.4s all;
 }
 .sidebar_menu a:hover{
 	background: #f9f9f9;
@@ -102,7 +108,7 @@ body{
 .product_description{
 	padding: 30px 20px 0 20px;	
 	line-height: 21px;
-	font-size: 13.3px;
+	font-size: 13px;
 	color: #2c2c2c;
 }
 
