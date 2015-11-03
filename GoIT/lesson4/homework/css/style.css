@@ -106,10 +106,15 @@ body{
 .menu ul li ul li {
 	background: #303030;
 	line-height: 25px;
+	width: 100%;
+	border-bottom: 1px solid transparent;
 }
 .menu ul li:hover ul {
 	display: block; 
 }
+.menu ul li ul li:hover{
+	border-bottom: 1px solid black;
+	}
 /* END NAVIGATION MENU */
 .content{
 	padding-bottom: 20px;
