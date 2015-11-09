@@ -1,0 +1,29 @@
+
+td{
+	border-bottom: 10px solid black;
+	border-right: 10px solid black;
+}
+table{
+
+	margin: 100px auto;
+	width: 500px;
+	height: 500px;
+}
+.red{
+	background: red;
+}
+.yellow{
+	background: yellow;
+}
+.black{
+	background: black;
+}
+.blue{
+	background: blue;
+}
+.whithout_bborder{
+	border-bottom: none;
+}
+.whithout_rborder{
+	border-right: none;
+}
