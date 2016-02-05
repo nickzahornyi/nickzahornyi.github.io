@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS_9-10</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jcarousel.basic.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.formstyler/1.7.4/jquery.formstyler.css">
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
+	<script src="js/jquery.jcarousel.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.formstyler/1.7.4/jquery.formstyler.min.js"></script>
+</head>
+<body>
+<!-- Menu -->
+
+	<ul class="menu">
+		<li class="menu-item_1"><a href="#">Nav 1</a></li>
+		<li class="menu-item_1"><a href="#">Nav 2</a></li>
+		<li class="menu-item_1 dropdown"><a href="#">Nav 3 &#9660</a>
+			<ul class="menu_2">
+				<li class="menu-item_2"><a href="#">Nav 3.1</a></li>
+				<li class="menu-item_2"><a href="#">Nav 3.2</a></li>
+				<li class="menu-item_2"><a href="#">Nav 3.3</a></li>
+				<li class="menu-item_2 dropdown-sub"><a href="#">Nav 3.4 &#9660</a>
+					<ul class="menu_3">
+						<li class="menu-item_3"><a href="">Nav 3.4.1</a></li>
+						<li class="menu-item_3"><a href="">Nav 3.4.2</a></li>
+						<li class="menu-item_3"><a href="">Nav 3.4.3</a></li>
+						<li class="menu-item_3"><a href="">Nav 3.4.4</a></li>
+						<li class="menu-item_3"><a href="">Nav 3.4.5</a></li>
+					</ul>
+				</li>
+				<li class="menu-item_2"><a href="#">Nav 3.5</a></li>
+			</ul>
+		</li>
+		<li class="menu-item_1"><a href="#">Nav 4</a></li>
+		<li class="menu-item_1"><a href="#">Nav 5</a></li>
+	</ul>
+<!-- Selectbox -->
+	<div class="select_main">
+	<select name="version_pledge" id="calc_region_1">
+		<option value="">Выберите ваш любимый цвет</option>
+		<option value="1">Красный</option>
+		<option value="2">Оранжевый</option>
+		<option value="3">Желтый</option>
+		<option value="3">Зеленый</option>
+		<option value="3">Голубой</option>
+		<option value="3">Синий</option>
+		<option value="3">Фиолетовый</option>						
+	</select>
+</div>
+<!-- Carrousel -->
+
+	<div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li><img src="img/img1.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/img2.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/img3.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/img4.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/img5.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/img6.jpg" width="600" height="400" alt=""></li>
+                    </ul>
+                </div>
+	                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+	                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+	                <p class="jcarousel-pagination"></p>
+	</div>  
+
+<section class="custom_checkboxes">
+		<h2>Checkboxes</h2>
+		<div class="jquery_checkbox">
+			<p>jQuery checkbox</p>
+			<label><input type="checkbox">  Item 1</label>
+			<label><input type="checkbox">  Item 2</label>
+			<label><input type="checkbox">  Item 3</label>
+			<label><input type="checkbox" disabled>  Item 4</label>
+			<button>Button</button>
+		</div>
+		<div class="css_checkbox">
+			<p>CSS checkbox</p>
+			<input type="checkbox" id = "css_checkbox1">
+			<label for = "css_checkbox1">Item 1</label>
+			<input type="checkbox" id = "css_checkbox2">
+			<label for = "css_checkbox2">Item 2</label>
+			<input type="checkbox" id = "css_checkbox3" disabled>
+			<label for = "css_checkbox3">Item 3</label>
+			<input type="checkbox" id = "css_checkbox4">
+			<label for = "css_checkbox4">Item 4</label>
+			<button>Button</button>
+		</div>
+	</section>
+</body>
+</html>

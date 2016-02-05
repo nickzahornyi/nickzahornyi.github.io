@@ -1,0 +1,191 @@
+body{
+	background-color: #FD9B23;
+}
+
+/*Menu*/
+.menu{
+	display: inline-block;
+	width: 100%;
+	background: #FF4500;
+}
+.menu a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	height: 30px;	
+}
+.menu a:hover{
+	color: white;
+}
+.menu_2{
+	z-index: 1;
+	display: none;
+	position: absolute;
+	background-color: #ff481a;
+	top: 40px;
+	left: 250px;
+	border: 1px solid black;
+	border-bottom: none;
+	-webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+}
+.menu_3{
+	z-index: 1;
+	display: none;
+	position: relative;
+	width: 170px;
+	left: 120px;
+	top: -40px;
+	background-color: #ff481a;
+	border: 1px solid black;
+	border-bottom: none;
+	-webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+}
+.menu-item_1{
+	float: left;
+	width: 100px;
+	margin: 10px 20px;
+
+}
+.menu-item_2{
+	z-index: 1;
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	padding: 10px 0 0 50px;
+	background-color: #ff481a;
+	border-bottom: 1px solid black;
+}
+.menu-item_2:hover{
+	background-color: #e62e00;
+	transition: all 1s;
+}
+.menu-item_3{
+	z-index: 1;
+	width: 120px;
+	height: 30px;
+	padding: 10px 0 0 50px;
+	background-color: #ff481a;
+	border-bottom: 1px solid black;
+}
+.menu-item_3:hover{
+	background-color: #e62e00;
+	transition: all 1s;
+}
+
+/*Selectbox*/
+
+.select_main{
+margin:50px auto 10px;
+width:300px; 
+}
+
+/*CHECKBOXES*/
+
+.custom_checkboxes{
+    position: relative;
+    overflow: hidden;
+    color: black;
+}
+.custom_checkboxes p {
+	color: black;
+    padding: 10px;
+}
+.custom_checkboxes label {
+    display: block;
+    margin: auto;
+    width: 150px;
+}
+.custom_checkboxes button {
+    margin: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #CDD1DA;
+    cursor: pointer;
+}
+.custom_checkboxes button:hover {
+    background: #cd6c2d;
+    -webkit-box-shadow: 0 0 4px rgba(0,255,0,0.6);
+    -moz-box-shadow: 0 0 4px rgba(0,255,0,0.6);
+    box-shadow: 0 0 4px rgba(0,255,0,0.6);
+}
+.jquery_checkbox {
+    float: left;
+    margin: 10px;
+    width: 440px;
+    height: 200px;
+    -webkit-box-shadow: 0 0 3px black;
+    -moz-box-shadow: 0 0 3px black;
+    box-shadow: 0 0 3px black;
+}
+.jquery_checkbox .checked {
+    overflow: visible !important;
+}
+.jquery_checkbox label {
+    padding: 5px;
+}
+.css_checkbox {
+    float: right;
+    margin: 10px;
+    width: 440px;
+    height: 200px;
+    -webkit-box-shadow: 0 0 3px black;
+    -moz-box-shadow: 0 0 3px black;
+    box-shadow: 0 0 3px black;
+}
+.css_checkbox input {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+.css_checkbox input + label {
+    cursor: pointer;
+}
+.css_checkbox input:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+.css_checkbox input:not(checked) + label {
+    position: relative; 
+    padding: 0 0 14px 50px; 
+}
+.css_checkbox input:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 40px;
+    height: 20px;
+    border-radius: 13px;
+    background: #cd6c2d;
+    box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+}
+.css_checkbox input:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    transition: all .2s; 
+}
+
+.css_checkbox input:checked + label:before {
+    background: #9FD468;
+}
+.css_checkbox input:checked + label:after {
+    left: 22px;
+}
+.css_checkbox input:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(255,255,0,.5);
+}
+
