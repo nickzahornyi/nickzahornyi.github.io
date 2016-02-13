@@ -35,6 +35,9 @@ $(document).ready(function (){
     });
 
 	$button.on("click", function(){
+       $(".firstname-help").remove();
+       $(".lastname-help").remove();
+       $(".address-help").remove()
 	     $(".firstname").append('<span class="firstname-help">' + $firstNameHelp + '</span>');
        $(".lastname").append('<span class="lastname-help">' + $lastNameHelp + '</span>');
        $(".address").append('<span class="address-help">' + $addressHelp + '</span>');
