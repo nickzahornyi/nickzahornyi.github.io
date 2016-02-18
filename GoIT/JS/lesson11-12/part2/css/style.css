@@ -1,0 +1,130 @@
+body{
+	background: url(../img/space-2.jpg) no-repeat;
+	background-size: cover;
+}
+.clearfix:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.wrapper-nav{
+	
+	height: 500px;
+	width: 1200px;
+	margin: 20px auto;	
+}
+.wrapper-nav li{
+	float: left;
+}
+.wrapper-nav a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.user-photo{
+	margin: 20px;
+	width: 130px;
+}
+.user-name{
+	text-align: center;
+	display: inline-block;
+	width: 150px;
+	color: #FFD700;
+	font-size: 26px;
+	margin: 10px 0;
+}
+.wrapper-nav a:hover{
+	background: linear-gradient(to bottom, #fceabb 0%,#fccd4d 49%,#f8b500 100%);
+}
+.button{
+	position: fixed;
+	top: 100px;
+	left: 20px;
+	display: block;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid white;
+	background-color: blue;
+	color: white;
+	text-align: center;
+	border-radius: 10px;
+ 	text-decoration: none;
+}
+.next{
+	position: fixed;
+	top: 300px;
+	right: 50px;
+	display: block;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid white;
+	background-color: #02267d;
+	color: white;
+	text-align: center;
+	border-radius: 10px;
+	text-decoration: none;
+}
+.hide{
+	display: none;
+}
+.information{
+	width: 1000px;
+	margin: 10px auto;
+	background: rgba(0, 0, 0, 0.5);
+	position: relative;
+	overflow: hidden;
+}
+.name{
+	position: relative;
+	text-align: center;
+	padding-top: 50px;
+	font-size: 25px;
+	color: yellow;
+	text-shadow: 0px 0px 30px rgba(255, 255, 255, 1);
+}
+.description{
+	float: right;
+	width: 700px;
+	margin: 50px;
+	text-align: center;
+	color: #FFD700;
+	font-size: 20px;
+}
+.information img{
+	margin: 10px;
+	float: left;
+}
+.full-name{
+	color: #FFD700;
+	font-size: 20px;
+	margin: 20px;
+}
+.full-name span{
+	color: white;
+}
+.birthday{
+	color: #FFD700;
+	font-size: 20px;
+	margin: 20px;
+}
+.birthday span{
+	color: white;
+}
+.career{
+	color: #FFD700;
+	font-size: 20px;
+	margin: 20px;
+}
+.career-text{
+	color: white;
+}
+.history{
+	color: #FFD700;
+	font-size: 20px;
+	margin: 20px;
+}
+.history-text{
+	color: white;
+}
