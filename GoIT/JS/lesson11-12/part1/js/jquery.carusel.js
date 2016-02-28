@@ -5,22 +5,22 @@
         var rightUIEl = $('.carousel-arrow-right');
         var elementsList = $('.carousel-list');
      
-        var pixelsOffset = 620;
+        var pixelsOffset = 125;
         var currentLeftValue = 0;
         var elementsCount = elementsList.find('li').length;
-        var minimumOffset = - ((elementsCount - 1) * pixelsOffset);
+        var minimumOffset = - ((elementsCount - 5) * pixelsOffset);
         var maximumOffset = 0;
      
         leftUIEl.click(function(e) {
             if (currentLeftValue != maximumOffset) {
-                currentLeftValue += 620;
+                currentLeftValue += 125;
                 elementsList.animate({ left : currentLeftValue + "px"}, 500);
             }   
         });
      
         rightUIEl.click(function(e) {
             if (currentLeftValue != minimumOffset) {
-                currentLeftValue -= 620;
+                currentLeftValue -= 125;
                 elementsList.animate({ left : currentLeftValue + "px"}, 500);
             }  
         });
