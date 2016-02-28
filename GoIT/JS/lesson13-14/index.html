@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Big Bang Theory</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="js/tmpl.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	
+	<div class="wrapper-nav">
+		<ul class="clearfix">
+			<li><span class="user-name">Raj</span><a class="user1" href=""><img class="user-photo" src="img/1.jpg" alt=""></a></li>
+			<li><a class="user2" href=""><img class="user-photo" src="img/2.jpg" alt=""></a><span class="user-name">Penny</span></li>
+			<li><span class="user-name">Leonard</span><a class="user3" href=""><img class="user-photo" src="img/3.jpg" alt=""></a></li>
+			<li><span class="user-name">Shaldon</span><a class="user4" href=""><img class="user-photo" src="img/4.jpg" alt=""></a></li>
+			<li><a class="user5" href=""><img class="user-photo" src="img/5.jpg" alt=""></a><span class="user-name">Amy</span></li>
+			<li><span class="user-name">Howard</span><a class="user6" href=""><img class="user-photo" src="img/6.jpg" alt=""></a></li>
+			<li><a class="user7" href=""><img class="user-photo" src="img/7.jpg" alt=""></a><span class="user-name">Bernadette</span></li>
+		</ul>
+	</div>
+	<script type="text/html" id="template">
+		<a href="index.html" class="button">Back</a>
+		<a href="" class="next">Next</a>
+			<div class="information">
+				<p class="name"><%= data.userName %></p>
+				<p class="description"><%= data.userDescription %></p>
+				<img src="img/<%= data.userPhoto %>" alt="">
+				<p class="full-name">Full name: <span><%= data.userFullName %></span></p>
+				<p class="birthday">Birthday: <span><%= data.userBithday %></span></p>
+				<div class="career">
+					<p class="career-title">Career:</p>
+					<p class="career-text"><%= data.userCareer %></p>
+				</div>
+				<div class="history">
+					<p class="history-title">History:</p>
+					<p class="history-text"><%= data.userHistory %></p>
+				</div>
+			</div>
+	</script>
+</body>
+</html>
