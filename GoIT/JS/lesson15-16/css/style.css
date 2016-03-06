@@ -1,0 +1,127 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+	margin-bottom: 10px;
+}
+a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+a:visited{
+	color: #609;
+}
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
+.google{
+	width: 269px;
+	height: 95px; 
+	display: block;
+	margin: 100px auto 0;
+}
+.wrapper{
+	width: 100%;
+}
+form{
+	margin: 0 auto;
+}
+.search_text{
+	display: block;
+	width: 700px;
+	height: 40px;
+	line-height: 20px;
+	margin: 10px auto 20px;
+	padding-left: 5px;
+}
+.search_button{
+	display: block;
+	width: 145px;
+	height: 54px;
+    padding: 2px;
+	margin: 0 auto 15px;
+   	background-color: #0066FF;
+   	background-position: center center;
+    background-repeat: no-repeat;
+    border: 0 none transparent;
+    -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+       border-radius: 20px;
+    color: #fff;
+    font: 24px Arial, sans-serif;
+    outline: none;
+    cursor: pointer;
+}
+input[type="submit"],
+input[type="submit"]::-moz-focus-inner {
+	border: none;
+}
+::-webkit-input-placeholder {
+	font: 18px Arial, sans-serif;
+	opacity: 1; 
+	transition: opacity 0.3s ease;
+}
+::-moz-placeholder {
+	font: 18px Arial, sans-serif;
+	opacity: 1; 
+	transition: opacity 0.3s ease;
+}
+:-moz-placeholder {
+	font: 18px Arial, sans-serif;
+	opacity: 1; 
+	transition: opacity 0.3s ease;
+}
+:-ms-input-placeholder  {
+	font: 18px Arial, sans-serif;
+	opacity: 1; 
+	transition: opacity 0.3s ease;
+}
+:focus::-webkit-input-placeholder {
+	opacity: 0; 
+	transition: opacity 0.3s ease;
+}
+:focus::-moz-placeholder {
+	opacity: 0; 
+	transition: opacity 0.3s ease;
+}
+:focus:-moz-placeholder {
+	opacity: 0; 
+	transition: opacity 0.3s ease;
+}
+focus:-ms-input-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+.result {
+	width: 700px;
+	margin: 0 auto;
+}
+.page_nav_list{
+	margin: 15px 0;
+}
+a.page-list {
+	margin: 0 5px;
+	text-decoration: none;
+	color: #4285f4;
+}
+a.page-next {
+	margin-left: 30px;
+	text-decoration: none;
+	color: #4285f4;
+}
+.visibleURL {
+    color: #006621;
+}
+.content{
+	color: #545454;
+}
+a.active{
+	color: #000;
+	text-decoration: underline;
+}
