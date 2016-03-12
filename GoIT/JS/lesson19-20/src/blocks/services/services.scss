@@ -1,0 +1,75 @@
+/*SERVICES*/
+.services-wrapper {
+  width: 100%;
+  height: 500px;
+  background-color: #2a2d32; 
+}
+.services_container{
+  width: $main-width;
+  margin: $center;
+}
+.service {
+  float: left;
+  margin-right: 40px;
+  cursor: pointer; 
+  &:last-child {
+    margin-right: 0; 
+  }
+}
+.service__title {
+  padding: 40px 0;
+  font-family: $ubuntu-m;
+  font-size: 24px;
+  color: #fff; 
+}
+
+.service__image {
+  width: 260px;
+  height: 260px;
+  margin-bottom: 30px;
+  background: #fff url("../img/service_1.jpg") -172px 0; 
+}
+
+.service__image-second {
+  width: 260px;
+  height: 260px;
+  background: #fff url("../img/service_2.jpg") -110px 0; 
+}
+
+.service__image-third {
+  width: 260px;
+  height: 260px;
+  background: #fff url("../img/service_3.jpg") 0 0; 
+}
+
+.service__image-fourth {
+  width: 260px;
+  height: 260px;
+  background: #fff url("../img/service_4.jpg") -55px 0; 
+}
+
+.service__hover {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-image: url("");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0 0; 
+}
+
+.service:hover .service__hover {
+  background-color: rgba(36, 140, 236, 0.9);
+  background-image: url(../img/service-hover.png);
+  background-size: 35px 35px; 
+}
+.service:hover .service__desc {
+  color: #f4b60d; }
+
+.service__desc {
+  padding-bottom: 60px;
+  text-align: center;
+  font-family: $ubuntu-m;
+  font-size: 16px;
+  color: #fff; 
+}

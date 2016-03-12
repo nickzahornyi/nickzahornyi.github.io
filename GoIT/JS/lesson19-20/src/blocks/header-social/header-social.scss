@@ -1,0 +1,51 @@
+/*HEADER-SOCIAL*/
+.social {
+  float: right;
+  margin-top: 10px; 
+}
+.social__item {
+    float: left;
+    padding: 0 8px;
+    cursor: pointer; 
+}
+
+.icon_facebbok {
+  @include icon;
+  background-position: -15px -15px; 
+&:hover {
+  background-position: -61px -15px; 
+}
+}
+
+.icon_twitter {
+  @include icon;
+  background-position: -383px -15px; 
+&:hover {
+  background-position: -429px -15px; 
+}
+}
+
+.icon_rss {
+  @include icon;
+  background-position: -199px -15px; 
+&:hover {
+  @include icon;
+  background-position: -245px -15px; 
+}
+}
+
+.icon_skype {
+  @include icon;
+  background-position: -291px -15px; 
+&:hover {
+  background-position: -337px -15px; 
+}
+}
+.icon_linkedin {
+  @include icon;
+  background-position: -107px -15px; 
+
+&:hover {
+  background-position: -153px -15px; 
+}
+}

@@ -1,0 +1,100 @@
+/*FACILITIES*/
+.facilities {
+  width: $main-width;
+  height: 250px;
+  margin: $center;
+}
+
+.facilities__item {
+  float: left;
+  margin-right: 20px; 
+  margin-left: 10px; 
+}
+
+.facilities__number {
+  float: left;
+  height: 100%;
+  margin-top: -20px;
+  font-family: $ubuntu-m;
+  font-size: 90px;
+  color: #e9e9ea; 
+}
+
+.facilities__text {
+  float: left;
+  width: 240px;
+  line-height: 1.5;
+  margin-left: 14px; 
+}
+
+.facilities__title {
+  margin-bottom: 20px;
+  color: #2a2d32;
+  font-family: $ubuntu-m;
+  font-size: 20px; 
+  &:before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 15px;
+    background: #fff url(../img/facilities_sprite.png) -77px -15px no-repeat; 
+}
+}
+.new_technologies:before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: #fff url(../img/facilities_sprite.png) -15px -15px no-repeat; 
+}
+
+.fast_support:before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: #fff url(../img/facilities_sprite.png) -139px -15px no-repeat; 
+}
+
+.facilities__p {
+  height: 60px;
+  line-height: 1.5;
+  overflow: hidden;
+  font-family: $arial;
+  font-size: 13px;
+  color: #8a8a8a; 
+}
+
+.facilities__link {
+  float: left;
+  margin-left: 5px;
+  font-family: $ubuntu-m;
+  font-size: 13px;
+  color: #2a2d32; 
+}
+
+.facilities__link:hover {
+  color: #248cec; 
+}
+
+.facilities__link:after {
+  content: "";
+  display: block;
+  float: right;
+  width: 10px;
+  height: 9px;
+  margin-left: 15px;
+  margin-top: 3px;
+  background: #fff url(../img/arrow-right.png) -5px -5px no-repeat; 
+}
+
+.facilities__link:hover:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 9px;
+  margin-left: 15px;
+  margin-top: 3px;
+  background: #fff url(../img/arrow-right.png) -25px -5px no-repeat; 
+}
