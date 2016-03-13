@@ -7,11 +7,11 @@ gulp.task('babel', () => {
 		.pipe(babel({
 			presets: ['es2015']
 		}))
-		.pipe(gulp.dest('src/js/'));
+		.pipe(gulp.dest('src/js/temp/'));
 });
 
 gulp.task('compress', function() {
-  return gulp.src('src/js/script.js')
+  return gulp.src('src/js/temp/script.js')
     .pipe(uglify())
     .pipe(gulp.dest('build/js/'));
 });

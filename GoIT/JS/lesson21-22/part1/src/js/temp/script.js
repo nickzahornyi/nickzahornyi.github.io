@@ -1,8 +1,10 @@
-$(() => {
+'use strict;'
 
-  let html = $('#test').html();
+$(function () {
 
-  const question = [{
+  var html = $('#test').html();
+
+  var question = [{
     question: 'Что обозначает директива ‘use strict’?',
     answer: ['Код данного скрипта будет обработан по строгим правилам стандарта EcmaScript 6.', 'Код данного скрипта будет обработан по строгим правилам стандарта EcmaScript 5.', 'Код данного скрипта будет обработан по строгим правилам стандарта HTML5.'],
     rightAnswer: {
@@ -22,24 +24,27 @@ $(() => {
     }
   }];
 
-  let content = tmpl(html, {
+  var content = tmpl(html, {
     data: question
   });
 
- const [answerArray, manyAnswerArray, $body] = [[],[], $('body')];
+  var answerArray = [];
+  var manyAnswerArray = [];
+  var $body = $('body');
+
 
   $body.append(content);
 
   function checkAnswer(e) {
-    const user = [];
+    var user = [];
 
-    for (let i = 0; i < question.length; i++) {
+    for (var i = 0; i < question.length; i++) {
 
-      let inputs = $('.question' + i + ' input:radio');
+      var inputs = $('.question' + i + ' input:radio');
 
-      for (let k = 0; k < inputs.length; k++) {
-        let checked = [];
-        let right = [];
+      for (var k = 0; k < inputs.length; k++) {
+        var checked = [];
+        var right = [];
 
         if (inputs[k].checked == true) {
           checked[k] = inputs[k].checked;
@@ -56,8 +61,8 @@ $(() => {
       };
     };
 
-    let resultAverage = 0;
-    let resultTest = 0;
+    var resultAverage = 0;
+    var resultTest = 0;
     for (var _i = 0; _i < user.length; _i++) {
       if (user[_i]) {
         resultTest += 1;
@@ -82,6 +87,6 @@ $(() => {
     $overlay.remove();
   }
 
-  let result = $('.result');
+  var result = $('.result');
   result.on('click', checkAnswer);
 });
