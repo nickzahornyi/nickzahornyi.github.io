@@ -58,7 +58,7 @@ $(() => {
 
     let resultAverage = 0;
     let resultTest = 0;
-    for (var _i = 0; _i < user.length; _i++) {
+    for (let _i = 0; _i < user.length; _i++) {
       if (user[_i]) {
         resultTest += 1;
       };

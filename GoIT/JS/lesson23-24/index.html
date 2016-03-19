@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS_23-24</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script data-main="js/app" src="js/require.js"></script>
+</head>
+<body>
+	<script type="text/template" id="wrapper-template">
+		<div class="wrapper">
+			<h1>ToDoList</h1>
+			<ul class="item-list"></ul>
+			<div class="controlls">
+				<input type="text" class="item-value" placeholder="Напишите задачу">
+				<button class="item-add"><img src="img/add.png" alt=""></ing></button>
+			</div>
+		</div>
+	</script>
+
+	<script type="text/template" id="list-template">
+		<% for(var i = 0; i < data.length; i++) { %>
+			<li> <input class="item-input" type="text" name="" value=<%= data[i] %>>
+				<span class="item-delete" data-value="<%= data[i] %>"><img src="img/delete.png" alt=""></span>
+				<span class="item-edit"><img src="img/yes.png" alt=""></span>
+			</li>
+		<% }; %>
+	</script>
+</body>
+</html>
