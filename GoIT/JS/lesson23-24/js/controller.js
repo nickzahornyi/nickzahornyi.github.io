@@ -6,6 +6,13 @@ define(
       var self = this;
 
     view.elements.addBtn.on('click', addItem);
+
+    view.elements.input.on('keypress', function(e) {
+				if (e.which == 13) {
+          addItem();
+				}
+			});
+
     view.elements.listContainer.on('click', '.item-delete', removeItem);
     view.elements.listContainer.on('focus', '.item-input', getItemValue);
     view.elements.listContainer.on('click', '.item-edit', editItem);
