@@ -1,0 +1,44 @@
+$main-width:   940px;
+$tablet-width: 768px;
+$red:     		 #ff4e50;
+$dark:         #333333;
+$grey:         #cccccc;
+$white:        #ffffff;
+$mont-b:       'Montserrat-bold', Arial, sans-serif;
+$mont-r:       'Montserrat-regular', Arial, sans-serif;
+$roboto:       'Roboto', sans-serif;
+
+@font-face {
+	font-family: 'Montserrat-bold';
+	src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+	font-family: 'Montserrat-regular';
+	src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url(../fonts/Roboto-Light.ttf);
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.button{
+  display: block;
+  width: 205px;
+  text-align: center;
+  margin: 35px auto;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 20px;
+	line-height: 20px;
+}
