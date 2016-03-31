@@ -1,0 +1,109 @@
+@media screen and (max-width: 939px) {
+// HEADER
+.header__wrapper{
+  width: 670px;
+}
+.container{
+  width: 768px;
+  margin: 0 auto;
+}
+// SLIDER
+.start{
+  width: 768px;
+}
+.start__wrap {
+  margin: auto;
+		width: 748px;
+	}
+.start__title {
+		font-size: 21px;
+		margin: 96px 0 34px 0;
+	}
+.step__text{
+  width: 220px;
+}
+	.start__steps {
+		width: 236px;
+	}
+	.start__content {
+		width: 236px;
+	}
+	.arrows__prev {
+		top: 40px;
+	}
+	.arrows__next {
+		top: 40px;
+	}
+	.start__content-info {
+		height: 400px;
+	}
+	.step2 {
+		padding: 0 17px;
+	}
+// PARTNERS
+.partners {
+		margin:100px auto 98px;
+	}
+  .partners__title {
+		margin: 0 5px 34px 0;
+	}
+  .partners__list {
+  width: 472px;
+  margin: 0 auto;
+  .partners__item {
+    width: 220px;
+    float: left;
+  }
+}
+.partners__form {
+  margin: 30px auto 0;
+}
+.partners__button {
+  width: 192px;
+    margin-right: 3px;
+}
+// ACTIVITIES
+.activities{
+  width: 768px;
+}
+.activities__wrapper{
+  width: 751px;
+
+}
+.activities__item{
+  width: 236px;
+}
+.activities__item-double{
+  width: 492px;
+}
+// FOOTER
+.footer{
+  width: 768px;
+}
+.footer__wrapper{
+  width: 687px;
+  margin: auto;
+}
+.footer__title{
+  margin: 35px 0 0 -8px;
+}
+.footer__title2{
+  margin: 0 0 0 -22px;
+}
+.footer__item{
+  margin: 3px 0 0 -22px;
+  line-height: 22px;
+}
+.footer__title3{
+  margin: -120px 0 0 390px;
+}
+.footer__logo{
+  margin-right: 5px;
+}
+// FANCYBOX
+.fancybox-modal img{
+  min-width: 500px;
+  max-width: 600px;
+  max-height: 600px;
+}
+}

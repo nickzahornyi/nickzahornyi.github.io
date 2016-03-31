@@ -1,0 +1,55 @@
+.footer{
+  border-top: 4px solid $red;
+  height: 192px;
+}
+.footer__wrapper{
+  width: $main-width;
+  margin: 0 auto;
+}
+.footer__title{
+  margin-top: 38px;
+  font-family: $mont-b;
+  letter-spacing: 0.7px;
+  font-size: 16px;
+  color: $red;
+}
+.footer__list{
+  margin-left: 240px;
+  margin-top: -20px;
+  line-height: 26px;
+}
+.footer__item{
+  width: 300px;
+}
+.footer__item a{
+  font-family: $roboto;
+  font-size: 14px;
+  color: #666;
+  &:hover{
+    color: $red;
+    font-weight: 600;
+    transition: 0.3s all;
+  }
+}
+.footer__title2{
+  font-weight: 900;
+}
+.footer__title3{
+  margin-left: 400px;
+  margin-top: -125px;
+  font-weight: 900;
+  font-family: $mont-b;
+  font-size: 14px;
+}
+.footer__logo{
+  float: right;
+  cursor: pointer;
+}
+.footer__text{
+  text-transform: uppercase;
+  font-family: $mont-b;
+  color: #ccc;
+  font-size: 10px;
+  margin: -15px 0 10px 31px;
+  letter-spacing: 0.9px;
+}
