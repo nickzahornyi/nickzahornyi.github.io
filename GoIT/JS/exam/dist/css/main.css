@@ -507,10 +507,6 @@ table {
 .fancybox-modal {
   display: inline-block;
   vertical-align: middle;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
-  -webkit-box-shadow: 10px 6px 49px 1px black;
-  box-shadow: 10px 6px 49px 1px black;
   text-align: center;
   cursor: pointer; }
   .fancybox-modal img {
