@@ -1,0 +1,43 @@
+// FANCYBOX
+.fancybox-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #eee;
+	opacity: 0.8;
+}
+
+.modal-wrap:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.modal-wrap {
+	position: fixed;
+	width: 100%;
+	height: 480px;
+	top: 5%;
+	vertical-align: middle;
+	left: 0;
+	text-align: center;
+}
+
+.fancybox-modal {
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 5px;
+	-webkit-box-shadow: 10px 6px 49px 1px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 10px 6px 49px 1px rgba(0, 0, 0, 1);
+	box-shadow: 10px 6px 49px 1px rgba(0, 0, 0, 1);
+	text-align: center;
+	cursor: pointer;
+	img {
+    min-width: 600px;
+    max-width: 1000px;
+		max-height: 600px;
+	}
+}

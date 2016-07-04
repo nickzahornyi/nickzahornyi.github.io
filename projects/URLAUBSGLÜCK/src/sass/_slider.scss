@@ -1,0 +1,122 @@
+// SLIDER
+.start__wrap {
+	width: $main-width;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.start__title {
+	font-family: $mont-b;
+	font-size: 22px;
+	font-weight: bold;
+	margin: 98px 0 34px 5px;
+	cursor: default;
+	text-align: center;
+	letter-spacing: 0.1px;
+	color: $dark;
+}
+.start__steps {
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 400px;
+	margin-right: 20px;
+	@include border-radius(4px);
+	overflow: hidden;
+	.step {
+		position: relative;
+		width: 20000em;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.step__content {
+		float: left;
+	}
+}
+.start__steps--last,
+.step--last {
+		margin-right: 0;
+}
+.step__content {
+	width: 300px;
+	height: 400px;
+	margin-right: 5px;
+	@include border-radius(4px);
+	padding: 0 20px;
+	box-sizing: border-box;
+	color: $white;
+	background-position: center;
+}
+.step1 {
+	background-image: url(../img/step_1.jpg);
+}
+.step2 {
+	background-image: url(../img/step_2.jpg);
+}
+.step3 {
+	background-image: url(../img/step_3.jpg);
+}
+.arrows__prev {
+	display: block;
+	position: absolute;
+	top: 153px;
+	left: 20px;
+	width: 30px;
+	height: 55px;
+	background: url(../img/arrow_tab.png);
+	background-position: 0 68px;
+	opacity: 0.4;
+	cursor: pointer;
+	&:hover {
+		opacity: 1;
+	}
+}
+.arrows__next {
+	display: block;
+	position: absolute;
+	top: 153px;
+	right: 20px;
+	width: 30px;
+	height: 55px;
+	background: url(../img/arrow_tab.png);
+	background-position: 31px 68px;
+	opacity: 0.4;
+	cursor: pointer;
+	&:hover {
+		opacity: 1;
+	}
+}
+.step__number {
+	width: 50px;
+	height: 20px;
+	margin-bottom: 15px;
+	padding: 0 10px;
+	@include border-radius(10px);
+	font: 10px/21px $mont-b;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 1px;
+	background-color: $red;
+	cursor: pointer;
+}
+.step__content-info {
+	height: 400px;
+	position: relative;
+	display: table-cell;
+	vertical-align: bottom;
+	bottom: 15px;
+}
+.step__title {
+	font: bold 24px/27px $mont-b;
+	letter-spacing: .04em;
+}
+.step__text {
+	display: block;
+	line-height: 17px;
+	margin-top: 14px;
+	font-family: $roboto;
+	font-size: 14px;
+	font-weight: 300;
+	color: $grey;
+}
