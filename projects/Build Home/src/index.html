@@ -3,17 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>JS_19-20</title>
-	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="../build/css/main.min.css">
 	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="blocks/slider/slider.js"></script>
+	<script src="blocks/accardion/accardion.js"></script>
 	<script src='https://cdn.jsdelivr.net/lodash/4.5.0/lodash.min.js'></script>
-	<script src="js/all.js"></script>
 </head>
-	<body>
-			<header class="header clearfix">
+<body>
+			<header class=" header clearfix">
 				<a href="#" class='logo__link'>
 					<p class='logo__text-top'>Build Home</p>
 					<p class='logo__text-bottom'>Industrial Theme</p>
 				</a>
+
 				<ul class="social">
 					<li class="social__item"><a class='icon_facebbok' href="#"></a></li>
 					<li class="social__item"><a class='icon_twitter' href="#"></a></li>
@@ -21,7 +23,7 @@
 					<li class="social__item"><a class='icon_linkedin' href="#"></a></li>
 					<li class="social__item"><a class='icon_skype' href="#"></a></li>
 				</ul>
-			<!-- HEADER-NAV-->
+			<!-- Main menu-->
 				<nav class="header-nav clearfix">
 					<ul class='header-nav__ul'>
 						<li class='header-nav__list header-nav__active'><a href="#" class='header-nav__link'>HOME</a></li>
@@ -30,18 +32,19 @@
 						<li class='header-nav__list'><a href="#" class='header-nav__link'>NEWS</a></li>
 						<li class='header-nav__list'><a href="#" class='header-nav__link'>SHOP</a></li>
 					</ul>
-					<form class="header-nav__search" >
+					<form action="" class="header-nav__search" >
 						<input type="text" placeholder="Search...">
 					</form>
 				</nav>
-			</header>
-			<!-- SLIDER -->
-			<div id="owl" class="owl-carousel">
+			</header>	
+			<!-- Carousel -->
+			<div id="owl" class="owl-carousel"> 
   				<div class="owl-item"><img class="owl-img" src="img/slider-build.jpg" alt=""></div>
   				<div class="owl-item"><img class="owl-img" src="img/slider-city.jpg" alt=""></div>
-  				<div class="owl-item"><img class="owl-img" src="img/slider-building.jpg" alt=""></div>
+  				<div class="owl-item"><img class="owl-img" src="img/slider-building.jpg" alt=""></div> 
 			</div>
-			<!-- FACILITIES -->
+
+			<!-- Preferences -->
 			<div class="facilities clearfix">
 				<div class="facilities__item">
 					<p class="facilities__number">01</p>
@@ -51,6 +54,7 @@
 						<a href="#" class='facilities__link'>Read more </a>
 					</div>
 				</div>
+
 				<div class="facilities__item">
 					<p class="facilities__number">02</p>
 					<div class="facilities__text">
@@ -59,6 +63,7 @@
 						<a href="#" class='facilities__link'>Read more </a>
 					</div>
 				</div>
+
 				<div class="facilities__item">
 					<p class="facilities__number">03</p>
 					<div class="facilities__text">
@@ -67,8 +72,9 @@
 						<a href="#" class='facilities__link'>Read more </a>
 					</div>
 				</div>
-			</div>
-		<!-- SERVICES -->
+			</div>	
+
+		<!-- Services -->
 		<div class="services-wrapper clearfix">
 			<div class="services_container clearfix">
 				<h3 class="service__title">Our Services</h3>
@@ -98,8 +104,9 @@
 				</div>
 			</div>
 		</div>
+	
 	<div class="news-and-accardion-container">
-	<!-- NEWS -->
+	<!-- News -->
 		<div class="news-wrapper clearfix">
 			<div class="container clearfix">
 				<div class="news">
@@ -115,6 +122,7 @@
 							<p class="news__desc">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
 						</div>
 					</div>
+
 					<div class="news-box clearfix">
 						<a href="#" class="news__img news__img-second">
 							<p class="news__month">Jan</p>
@@ -127,40 +135,44 @@
 						</div>
 					</div>
 				</div>
-				<!-- Accardion -->
+				<!-- Accardion -->	
 				<div class="banners">
 					<h3 class="news__title">Banners Place</h3>
+
 					<div class="accordion">
 	    				<div class="accordion__section">
 	    					<div class="accordion__tab" href="#accordion-1">
-	        					<a href="#accordion-1" class="accordion__title">Accordion Panel 1</a>
+	        					<a class="accordion__title">Accordion Panel 1</a>
 	                		</div>
 	            			<p id="accordion-1" class="accordion__content">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur </p>
 	        			</div>
+
 	    				<div class="accordion__section">
 	    					<div class="accordion__tab" href="#accordion-2">
 	        					<a class="accordion__title">Accordion Panel 2</a>
 	             			</div>
-	            			<p id="accordion-2" class="accordion__content">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur </p>
+	            			<p id="accordion-2" class="accordion__content">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur </p>        				
 	    				</div>
+
 	    				<div class="accordion__section">
 	        				<div class="accordion__tab" href="#accordion-3">
 	        					<a class="accordion__title">Accordion Panel 3</a>
 	             			</div>
-	            			<p id="accordion-3" class="accordion__content">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur </p>
+	            			<p id="accordion-3" class="accordion__content">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur </p>  
 	    				</div>
+
 	    				<div class="accordion__section">
 	        				<div class="accordion__tab" href="#accordion-4">
 	        					<a class="accordion__title">Accordion Panel 4</a>
 	             			</div>
-	            			<p id="accordion-4" class="accordion__content">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur </p>
+	            			<p id="accordion-4" class="accordion__content">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur </p>  
 	    				</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- PARTNERS -->
+	<!-- Partners -->
 	<div class="partners clearfix">
 			<a href=""><img class="partners__logo" src="img/rbp.png" alt="Rbp wheels"></a>
 			<a href=""><img class="partners__logo" src="img/moto.png" alt="Moto metal"></a>
@@ -169,52 +181,45 @@
 			<a href=""><img class="partners__logo" src="img/cruiser.png" alt="Cruiser alloy"></a>
 			<a href=""><img class="partners__logo" src="img/gear.png" alt="Gear"></a>
 	</div>
-	<!-- FOOTER -->
+
 	<footer class="footer">
 		<div class="footer__wrapper">
 			<div class="container clearfix">
 				<ul class="footer__menu">
 					<li class="footer__title">SOCIALS
-						<ul>
-							<li class="footer__list"><a href="#" class="footer__link">Facebook</a></li>
-							<li class="footer__list"><a href="#" class="footer__link">Flickr</a></li>
-							<li class="footer__list"><a href="#" class="footer__link">Twitter</a></li>
-							<li class="footer__list"><a href="#" class="footer__link">Vimeo</a></li>
-						</ul>
+						<li class="footer__list"><a href="#" class="footer__link">Facebook</a></li>
+						<li class="footer__list"><a href="#" class="footer__link">Flickr</a></li>
+						<li class="footer__list"><a href="#" class="footer__link">Twitter</a></li>
+						<li class="footer__list"><a href="#" class="footer__link">Vimeo</a></li>
 					</li>
 				</ul>
 				<ul class="footer__menu">
 					<li class="footer__title">LINKS
-						<ul>
-							<li class="footer__list"><a href="#" class="footer__link">How to Write a Blog</a></li>
-							<li class="footer__list"><a href="#" class="footer__link">Create a Blog in 4 Steps</a></li>
-							<li class="footer__list"><a href="#" class="footer__link">15 Tips to Increase Traffic</a></li>
-							<li class="footer__list"><a href="#" class="footer__link">20 Blog Post Ideas</a></li>
-						</ul>
+						<li class="footer__list"><a href="#" class="footer__link">How to Write a Blog></a></li>
+						<li class="footer__list"><a href="#" class="footer__link">Create a Blog in 4 Steps</a></li>
+						<li class="footer__list"><a href="#" class="footer__link">15 Tips to Increase Traffic</a></li>
+						<li class="footer__list"><a href="#" class="footer__link">20 Blog Post Ideas</a></li>
 					</li>
 				</ul>
 				<ul class="footer__menu">
 					<li class="footer__title">BLOGROLL
-						<ul>
-							<li class="footer__list"><a href="#" class="footer__link">Blogs Blog</a></li>
-							<li class="footer__list"><a href="#" class="footer__link">Roll Up Roll Up</a></li>
-							<li class="footer__list"><a href="#" class="footer__link">Blog Free</a></li>
-							<li class="footer__list"><a href="#" class="footer__link">Wordpress Blog</a></li>
-						</ul>
+						<li class="footer__list"><a href="#" class="footer__link">Blogs Blog</a></li>
+						<li class="footer__list"><a href="#" class="footer__link">Roll Up Roll Up</a></li>
+						<li class="footer__list"><a href="#" class="footer__link">Blog Free</a></li>
+						<li class="footer__list"><a href="#" class="footer__link">Wordpress Blog</a></li>
 					</li>
 				</ul>
 				<ul class="footer__menu">
 					<li class="footer__title">ABOUT US
-						<ul>
-							<li class="footer__list"><a href="#" class="footer__link">Agriculture</a></li>
-							<li class="footer__list"><a href="#" class="footer__link">Harvest</a></li>
-							<li class="footer__list"><a href="#" class="footer__link">Company news</a></li>
-							<li class="footer__list"><a href="#" class="footer__link">Investor relations</a></li>
-						</ul>
+						<li class="footer__list"><a href="#" class="footer__link">Agriculture</a></li>
+						<li class="footer__list"><a href="#" class="footer__link">Harvest</a></li>
+						<li class="footer__list"><a href="#" class="footer__link">Company news</a></li>
+						<li class="footer__list"><a href="#" class="footer__link">Investor relations</a></li>
 					</li>
 				</ul>
 			</div>
 		</div>
+
 		<div class="footer-contacts">
 			<div class="footer-contacts-container clearfix">
 				<span class="footer-contacts__adress">BuildHomeLtd.  Street Name 123   23 45 Cityname</span>
