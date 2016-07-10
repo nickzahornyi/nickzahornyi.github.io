@@ -7,12 +7,10 @@ var gulp       = require('gulp'),
 	imagemin     = require('gulp-imagemin'),
 	pngquant     = require('imagemin-pngquant'),
 	cache        = require('gulp-cache'),
-	autoprefixer = require('gulp-autoprefixer'),
 	cleanCSS 		 = require('gulp-clean-css');
 gulp.task('scss', function(){
 	return gulp.src('src/scss/**/*.scss')
 		.pipe(sass())
-		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
 		.pipe(gulp.dest('src/css'))
 		.pipe(browserSync.reload({stream: true}))
 });

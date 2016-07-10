@@ -61,13 +61,13 @@ table {
 .border {
   border-top: 1px solid #666666;
   border-bottom: 1px solid #666666;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
+  background-image: -moz-linear-gradient(top, #666666 0%, #ffffff 25%, #ffffff 72%, #ffffff 73%, #666666 100%), -moz-linear-gradient(top, #666666 0%, #ffffff 25%, #ffffff 72%, #ffffff 73%, #666666 100%);
   background-image: -webkit-linear-gradient(top, #666666 0%, #ffffff 25%, #ffffff 72%, #ffffff 73%, #666666 100%), -webkit-linear-gradient(top, #666666 0%, #ffffff 25%, #ffffff 72%, #ffffff 73%, #666666 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#666666), color-stop(25%, #ffffff), color-stop(72%, #ffffff), color-stop(73%, #ffffff), to(#666666)), -webkit-gradient(linear, left top, left bottom, from(#666666), color-stop(25%, #ffffff), color-stop(72%, #ffffff), color-stop(73%, #ffffff), to(#666666));
   background-image: linear-gradient(to bottom, #666666 0%, #ffffff 25%, #ffffff 72%, #ffffff 73%, #666666 100%), linear-gradient(to bottom, #666666 0%, #ffffff 25%, #ffffff 72%, #ffffff 73%, #666666 100%);
   background-repeat: no-repeat;
   background-position: 0 0, 100% 0;
+  -moz-background-size: 1px 100%;
   background-size: 1px 100%; }
 
 /*HEADER*/
@@ -113,8 +113,7 @@ table {
   font-family: "Open Sans ExtraBold", Arial, sans-serif;
   font-size: 12px;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; }
+  -moz-appearance: none; }
 
 .menu-controllers__select-language {
   color: #666666;
@@ -283,9 +282,7 @@ table {
   left: 240px;
   display: block;
   padding: 0 27px;
-  -webkit-transform: translateY(-9px);
-      -ms-transform: translateY(-9px);
-          transform: translateY(-9px);
+  transform: translateY(-9px);
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #666666;
@@ -302,8 +299,7 @@ table {
   height: 80px;
   border: 1px solid #1469EB;
   background: #ffffff;
-  -webkit-box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1); }
 
 .transfer::after, .transfer::before {
   position: absolute;
@@ -314,18 +310,15 @@ table {
   height: 30px;
   content: '';
   -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
+  transform: rotate(45deg);
   border: 1px solid #1469EB;
-  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 12px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3); }
 
 .transfer::before {
   z-index: 1;
   border: none;
   background: #ffffff;
-  -webkit-box-shadow: none;
-          box-shadow: none; }
+  box-shadow: none; }
 
 .transfer__text {
   display: block;
@@ -390,6 +383,7 @@ table {
   border-top: none;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2); }
 
 .payment-systems__triangle {
@@ -448,8 +442,7 @@ table {
   font-family: "Open Sans ExtraBold", Arial, sans-serif;
   font-size: 20px;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; }
+  -moz-appearance: none; }
 
 .currency__select-options {
   font-size: 16px; }
@@ -475,9 +468,8 @@ table {
   margin-top: 190px;
   border-top: 1px solid black;
   -webkit-border-image: -webkit-linear-gradient(left, #ffffff 0%, #666666 38%, #666666 38%, #666666 63%, #ffffff 100%);
-  -o-border-image: linear-gradient(to left, #ffffff 0%, #666666 38%, #666666 38%, #666666 63%, #ffffff 100%);
-     border-image: -webkit-gradient(linear, right top, left top, from(#ffffff), color-stop(38%, #666666), color-stop(38%, #666666), color-stop(63%, #666666), to(#ffffff));
-     border-image: linear-gradient(to left, #ffffff 0%, #666666 38%, #666666 38%, #666666 63%, #ffffff 100%);
+  -moz-border-image: -moz-linear-gradient(left, #ffffff 0%, #666666 38%, #666666 38%, #666666 63%, #ffffff 100%);
+  border-image: linear-gradient(to left, #ffffff 0%, #666666 38%, #666666 38%, #666666 63%, #ffffff 100%);
   border-image-slice: 1; }
 
 .personal-info__payment-system {
@@ -516,11 +508,10 @@ table {
   height: 80px;
   border: 1px solid #1469EB;
   background: #ffffff;
+  background: -moz-linear-gradient(left, transparent 0%, #ffffff 100%);
   background: -webkit-linear-gradient(left, transparent 0%, #ffffff 100%);
-  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#ffffff));
   background: linear-gradient(to right, transparent 0%, #ffffff 100%);
-  -webkit-box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.1);
-          box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.1); }
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.1); }
 
 .transfer-get::after, .transfer-get::before {
   position: absolute;
@@ -531,18 +522,15 @@ table {
   height: 30px;
   content: '';
   -webkit-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
-      transform: rotate(135deg);
+  transform: rotate(135deg);
   border: 1px solid #1469EB;
-  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 12px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2); }
 
 .transfer-get::before {
   z-index: 1;
   border: none;
   background: #ffffff;
-  -webkit-box-shadow: none;
-          box-shadow: none; }
+  box-shadow: none; }
 
 .change {
   position: absolute;
@@ -554,16 +542,14 @@ table {
   height: 80px;
   border: 1px solid #1469EB;
   background: #ffffff;
-  -webkit-box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1); }
 
 .exchange {
   margin-top: 58px;
   border-top: 2px solid black;
   -webkit-border-image: -webkit-linear-gradient(left, #ffffff 0%, #666666 38%, #666666 38%, #666666 63%, #ffffff 100%);
-  -o-border-image: linear-gradient(to left, #ffffff 0%, #666666 38%, #666666 38%, #666666 63%, #ffffff 100%);
-     border-image: -webkit-gradient(linear, right top, left top, from(#ffffff), color-stop(38%, #666666), color-stop(38%, #666666), color-stop(63%, #666666), to(#ffffff));
-     border-image: linear-gradient(to left, #ffffff 0%, #666666 38%, #666666 38%, #666666 63%, #ffffff 100%);
+  -moz-border-image: -moz-linear-gradient(left, #ffffff 0%, #666666 38%, #666666 38%, #666666 63%, #ffffff 100%);
+  border-image: linear-gradient(to left, #ffffff 0%, #666666 38%, #666666 38%, #666666 63%, #ffffff 100%);
   border-image-slice: 1; }
 
 .sub-menu {
@@ -572,9 +558,7 @@ table {
   height: 32px;
   margin: 0 65px;
   padding: 0 18px;
-  -webkit-transform: translateY(-18px);
-      -ms-transform: translateY(-18px);
-          transform: translateY(-18px);
+  transform: translateY(-18px);
   background-color: #ffffff; }
 
 .sub-menu a {
@@ -698,9 +682,7 @@ table {
   width: 300px;
   margin: 0 auto;
   padding: 0 27px;
-  -webkit-transform: translateY(-9px);
-      -ms-transform: translateY(-9px);
-          transform: translateY(-9px);
+  transform: translateY(-9px);
   color: #666666;
   background-color: #ffffff;
   font-family: "Open Sans ExtraBold", Arial, sans-serif;
@@ -857,9 +839,7 @@ table {
   color: #666666;
   background-color: #ffffff;
   padding: 0 27px;
-  -webkit-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-          transform: translateY(-10px);
+  transform: translateY(-10px);
   margin: 0 auto; }
 
 /*SOCIALS*/
@@ -1012,9 +992,7 @@ table {
     font-size: 12px; }
   .menu__back img {
     margin-right: 10px;
-    -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-            transform: rotate(180deg); }
+    transform: rotate(180deg); }
   .menu__lenguage {
     margin-left: 60px; }
   .menu__lenguage a {
@@ -1066,9 +1044,7 @@ table {
     font-size: 18px; }
   .menu__links img {
     margin-left: 20px;
-    -webkit-transform: rotate(270deg);
-        -ms-transform: rotate(270deg);
-            transform: rotate(270deg); }
+    transform: rotate(270deg); }
   .menu {
     position: absolute;
     z-index: 22;
@@ -1165,8 +1141,8 @@ table {
     top: 64px;
     left: 135px; }
   .transfer-get {
+    background: -moz-linear-gradient(top, transparent 0%, transparent 40%, #ffffff 50%, #ffffff 100%);
     background: -webkit-linear-gradient(top, transparent 0%, transparent 40%, #ffffff 50%, #ffffff 100%);
-    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(40%, transparent), color-stop(50%, #ffffff), to(#ffffff));
     background: linear-gradient(to bottom, transparent 0%, transparent 40%, #ffffff 50%, #ffffff 100%); }
   .transfer-get::after, .transfer::before {
     top: 64px;
@@ -1183,10 +1159,7 @@ table {
     position: relative;
     top: 190px;
     width: 320px;
-    -webkit-border-image: -webkit-linear-gradient(left, #ffffff 0%, #ffffff 40%, #666666 38%, #666666 63%, #ffffff 63%, #ffffff 100%);
-    -o-border-image: linear-gradient(left, #ffffff 0%, #ffffff 38%, #666666 40%, #666666 63%, #ffffff 63%, #ffffff 100%);
-       border-image: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(38%, #ffffff), color-stop(40%, #666666), color-stop(63%, #666666), color-stop(63%, #ffffff), to(#ffffff));
-       border-image: linear-gradient(left, #ffffff 0%, #ffffff 38%, #666666 40%, #666666 63%, #ffffff 63%, #ffffff 100%);
+    border-image: linear-gradient(left, #ffffff 0%, #ffffff 38%, #666666 40%, #666666 63%, #ffffff 63%, #ffffff 100%);
     border-image-slice: 1; }
   .personal-info__payment-system {
     width: 320px;
@@ -1296,9 +1269,7 @@ table {
   .directions__title {
     margin-top: 13px;
     padding: 0;
-    -webkit-transform: translateY(0px);
-        -ms-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
     text-align: center;
     color: #1469EB;
     font-size: 14px; }

@@ -246,8 +246,6 @@
   position: relative;
   top: 190px;
   width: 320px;
-  -webkit-border-image: -webkit-linear-gradient(left,  #ffffff 0%, #ffffff 40%, #666666 38%, #666666 63%, #ffffff 63%, #ffffff 100%);
-  -moz-border-image: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 40%, #666666 38%, #666666 63%, #ffffff 63%, #ffffff 100%);
   border-image: linear-gradient(left,  #ffffff 0%, #ffffff 38%, #666666 40%, #666666 63%, #ffffff 63%, #ffffff 100%);
   border-image-slice: 1;
 }
