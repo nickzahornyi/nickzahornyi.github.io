@@ -1,0 +1,201 @@
+/*HEADER*/
+.mobile-menu{
+  display: none;
+}
+.top-menu__logo{
+  display: block;
+  float: left;
+  margin: 18px 0 0 80px;
+}
+.top-menu__bold-text{
+  float: left;
+  margin: 20px 0 0 12px;
+  color: $blue;
+  font-family: $os;
+  font-size: 22px;
+}
+.top-menu__text{
+  float: left;
+  margin: 20px 0 0 0;
+  color: $blue;
+  font-family: $os;
+  font-size: 22px;
+}
+.menu-controllers {
+  float: right;
+  margin-top: 18px;
+}
+.menu-controllers__select{
+  display: inline-block;
+  float: left;
+  width: 65px;
+  margin-right: 16px;
+  padding: 4px 0 8px 15px;
+  cursor: pointer;
+  color: $main;
+  border: 1px solid $main;
+  outline: none;
+  background-image: url(../img/selection.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  font-family: $os-eb;
+  font-size: 12px;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+}
+.menu-controllers__select-language{
+  color: $main;
+  font-family: $os-eb;
+  font-size: 12px;
+}
+.menu-controllers__support{
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 124px;
+  height: 29px;
+  margin-right: 16px;
+  padding-left: 15px;
+  color: $blue;
+  border: 1px solid $blue;
+  background-image: url(../img/selection.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  font-family: $os-eb;
+  font-size: 12px;
+  line-height: 29px;
+}
+.menu-controllers__inner-support{
+  position: absolute;
+  z-index: 2;
+  top: 29px;
+  right: -17px;
+	display: none;
+  width: 139px;
+  margin-right: 16px;
+  list-style: square inside;
+  border: 1px solid $blue;
+  border-top: transparent;
+}
+.menu-controllers__inner-support a{
+  display: block;
+  height: 100%;
+  margin-left: 10px;
+  text-decoration: none;
+  font-family: $os;
+  font-size: 12px;
+}
+.menu-controllers__inner-support a:hover{
+  color: $white;
+}
+.menu-controllers__inner-support li{
+  background-color: $white;
+}
+.menu-controllers__inner-support li:hover{
+  color: $white;
+  background-color: $blue;
+}
+.menu-controllers__support:hover{
+  border-bottom: transparent;
+}
+.menu-controllers__support:hover .menu-controllers__inner-support{
+  display: block;
+  border-top: transparent;
+}
+.menu-controllers__settings{
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 47px;
+  height: 15px;
+  margin-right: 14px;
+  padding: 7px 0 7px 13px;
+  border: 1px solid $main;
+  background-image: url(../img/selection.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+.menu-controllers__inner-settings{
+  position: absolute;
+  z-index: 5;
+  top: 29px;
+  right: -17px;
+	display: none;
+  width: 60px;
+  margin-right: 16px;
+  margin-left: 10px;
+  border: 1px solid $main;
+  border-top: transparent;
+}
+.menu-controllers__inner-settings a{
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: $main;
+  background: $white;
+  &:hover{
+      color: $white;
+      background-color: $blue;
+  }
+}
+.menu-controllers__settings:hover{
+  border-bottom: transparent;
+}
+.menu-controllers__settings:hover .menu-controllers__inner-settings{
+  display: block;
+}
+.menu-controllers__exit{
+  display: inline-block;
+  float: left;
+  width: 85px;
+  height: 29px;
+  margin-right: 39px;
+  padding-left: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $main;
+  border: 1px solid  $main;
+  background-color: $white;
+  background-image: url(../img/exit-arrow.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  font-family: $os-eb;
+  font-size: 12px;
+  line-height: 29px;
+}
+.top-menu__border-bottom{
+  position: relative;
+  z-index: -1;
+  margin-top: 16px;
+}
+.top-menu__border-bottom_mob{
+  display: none;
+}
+.nav{
+  position: relative;
+  overflow: hidden;
+}
+.nav-container{
+  float: left;
+  width: 121px;
+  margin: 36px 6px 0 68px;
+}
+.nav-container__link{
+  display: block;
+  width: 100px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $main;
+  font-family: $os-b;
+  font-size: 16px;
+}
+.nav-container__image{
+  display: block;
+  height: 81px;
+  margin: 0 auto;
+}

@@ -1,0 +1,92 @@
+/*NEWS AND knowledge-base*/
+.news-and-knowledge{
+  margin-top: 28px;
+}
+.news{
+  float: left;
+  width: 461px;
+  height: 258px;
+  margin-left: 12px;
+  background-image: url(../img/dashed-border.png);
+}
+.news__title{
+  padding-top: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $main;
+  font-family: $os-eb;
+  font-size: 14px;
+}
+.news__image{
+  float: left;
+  margin: -10px 24px 0 0;
+}
+.news__text{
+  margin-top: 18px;
+  font-family: $os-l;
+  font-size: 14px;
+  line-height: 20px;
+}
+.news__container{
+  position: relative;
+  display: block;
+  width: 413px;
+  margin: 0 auto;
+}
+.button{
+  float: right;
+  text-decoration: none;
+  text-transform: uppercase;
+  color:  $main;
+  font-family: $os-eb;
+  font-size: 12px;
+}
+.button span{
+  font-size: 20px;
+}
+.left-arrow{
+  position: absolute;
+  top: 116px;
+  left: -35px;
+}
+.right-arrow{
+  position: absolute;
+  top: 116px;
+  right: -35px;
+}
+
+.knowledge-base{
+  position: relative;
+  float: left;
+  float: right;
+  width: 461px;
+  height: 258px;
+  margin-right: 12px;
+  background-image: url(../img/dashed-border.png);
+}
+.knowledge-base__container{
+  position: relative;
+  display: block;
+  width: 413px;
+  margin: 0 auto;
+}
+.knowledge-base__title{
+  padding-top: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $main;
+  font-family: $os-eb;
+  font-size: 14px;
+}
+.knowledge-base__image{
+  float: left;
+  width: 208px;
+  height: 126px;
+  margin: 20px 24px 0 0;
+}
+.knowledge-base__text{
+  margin-top: 18px;
+  font-family: $os-l;
+  font-size: 14px;
+  line-height: 20px;
+}
