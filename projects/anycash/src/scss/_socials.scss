@@ -1,0 +1,21 @@
+/*SOCIALS*/
+.socials{
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 48px;
+}
+.socials__text{
+  font-family: $os-b;
+  font-size: 16px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: $main;
+  letter-spacing: 1.5px;
+}
+.socials__image{
+  display: inline-block;
+  margin: 0 8px 0 8px;
+}
+.socials-mob{
+  display: none;
+}

@@ -1,0 +1,27 @@
+/*DESCRIPTION*/
+.description{
+  width: 986px;
+  height: 468px;
+  margin: 0 auto;
+  margin-top: 48px;
+}
+.description__text{
+  width: 436px;
+  float: left;
+  color: $main;
+  margin: 20px 0 18px 34px;
+  font-family: $os-l;
+  font-size: 14px;
+}
+.description__title{
+  text-transform: uppercase;
+  display: block;
+  width: 180px;
+  font-family: $os-eb;
+  font-size: 16px;
+  color: $main;
+  background-color: $white;
+  padding: 0 27px;
+  transform: translateY(-10px);
+  margin: 0 auto;
+}

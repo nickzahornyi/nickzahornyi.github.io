@@ -1,0 +1,99 @@
+/*FOOTER*/
+.footer{
+  position: relative;
+  height: 240px;
+}
+.footer-menu-mob{
+  display: none;
+}
+.footer__menu{
+  width: 964px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 48px;
+  border: 1px solid $blue;
+}
+.footer-menu__link{
+  margin: 0 40px 0 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $main;
+  font-family: $os;
+  font-size: 14px;
+  line-height: 30px;
+}
+.footer-menu__item{
+  float: left;
+}
+.footer__links a{
+  text-decoration: none;
+  color: $main;
+}
+.support{
+  position: absolute;
+  top: 38px;
+  left: 64px;
+  text-align: center;
+  font-family: $os;
+  font-size: 12px;
+}
+.support li{
+  margin: 16px 0;
+}
+.projects{
+  position: absolute;
+  top: 38px;
+  left: 250px;
+  text-align: center;
+  font-family: $os;
+  font-size: 12px;
+}
+.projects li{
+  margin: 16px 0;
+}
+.clients{
+  position: absolute;
+  top: 38px;
+  left: 430px;
+  text-align: center;
+  font-family: $os;
+  font-size: 12px;
+}
+.clients li{
+  margin: 16px 0;
+}
+.conditions{
+  position: absolute;
+  top: 38px;
+  right: 258px;
+  text-align: center;
+  font-family: $os;
+  font-size: 12px;
+}
+.conditions li{
+  margin: 16px 0;
+}
+.contacts{
+  position: absolute;
+  top: 38px;
+  right: 70px;
+  text-align: center;
+  font-family: $os;
+  font-size: 12px;
+}
+.contacts li{
+  margin: 16px 0;
+}
+.footer-socials{
+  position: absolute;
+  top: 28px;
+  right: 40px;
+  margin: 10px 0;
+  text-align: center;
+}
+.footer-socials li{
+  margin: 17px 0;
+}
+.footer__links a:hover{
+  text-decoration: underline;
+}

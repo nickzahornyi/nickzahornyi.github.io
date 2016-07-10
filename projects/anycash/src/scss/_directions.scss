@@ -1,0 +1,149 @@
+/*DIRECTIONS*/
+.directions{
+  position: relative;
+  width: 986px;
+  height: 398px;
+  margin: 0 auto;
+  margin-top: 48px;
+}
+.directions__line{
+  display: none;
+}
+.directions__title{
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  padding: 0 27px;
+  transform: translateY(-9px);
+  color: $main;
+  background-color: $white;
+  font-family: $os-eb;
+  font-size: 16px;
+}
+.directions__image{
+  position: absolute;
+  top: 71px;
+  left: 100px;
+  display: block;
+}
+.directions a{
+  text-decoration: none;
+  font-family: $os;
+}
+.mouse-arrow1{
+  position: absolute;
+  z-index: 1;
+  top: 267px;
+  left: 204px;
+}
+.mouse-arrow2{
+  position: absolute;
+  z-index: 1;
+  top: 327px;
+  left: 120px;
+}
+.perfext-money{
+  position: absolute;
+  top: 96px;
+  left: 48px;
+  color: #D6372A;
+  font-size: 36px;
+}
+.ok-pay{
+  position: absolute;
+  top: 193px;
+  right: 50px;
+  text-transform: uppercase;
+  color: #DD571B;
+  font-size: 20px;
+}
+.privat24{
+  position: absolute;
+  top: 128px;
+  right: 168px;
+  color: #0B8E36;
+  font-size: 20px;
+}
+.privat24 span{
+  color: #000000;
+}
+.yandex-money{
+  position: absolute;
+  top: 283px;
+  left: 359px;
+  color: #DD571B;
+  font-size: 24px;
+}
+.wallet1{
+  position: absolute;
+  top: 54px;
+  left: 307px;
+  color: #000000;
+  font-size: 20px;
+}
+.wallet1 span{
+  color: #D32283;
+}
+.exmo{
+  position: absolute;
+  top: 255px;
+  left: 198px;
+  color: #45B8FF;
+  font-size: 24px;
+}
+.qiwi{
+  position: absolute;
+  top: 110px;
+  right: 346px;
+  color: #F68F1E;
+  font-size: 32px;
+}
+.bitcoin{
+  position: absolute;
+  top: 224px;
+  right: 384px;
+  color: #F68F1E;
+  font-size: 28px;
+}
+.litecoin{
+  position: absolute;
+  top: 62px;
+  left: 412px;
+  color: $main;
+  font-size: 24px;
+}
+.payeer{
+  position: absolute;
+  top: 308px;
+  left: 89px;
+  color: #3498DB;
+  font-size: 32px;
+}
+.advcash{
+  position: absolute;
+  top: 64px;
+  right: 92px;
+  color: #46D3A4;
+  font-size: 24px;
+}
+.paymer{
+  position: absolute;
+  top: 162px;
+  left: 374px;
+  color: #006AB4;
+  font-size: 36px;
+}
+.btc-e{
+  position: absolute;
+  top: 192px;
+  left: 50px;
+  color: #5963BB;
+  font-size: 20px;
+}
+.webmoney{
+  position: absolute;
+  top: 267px;
+  right: 76px;
+  color: #006AB4;
+  font-size: 28px;
+}
