@@ -1,0 +1,551 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.8em;
+  color: #747c83;
+}
+
+a, button, input, textarea, select {
+  outline: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ff3366;
+}
+
+input, textarea, button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  outline: none;
+  resize: none;
+  font-family: "Open Sans", "open-sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+strong {
+  font-weight: 700;
+}
+
+img {
+  display: inline-block;
+}
+
+iframe {
+  position: relative;
+  z-index: 15;
+}
+
+blockquote.inner {
+  font-family: "brandon-grotesque", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: top center no-repeat;
+  background-image: url('../img/team/quote.png?1452121878');
+  padding-top: 60px;
+}
+
+blockquote.inner p {
+  font-size: 22px;
+  line-height: 40px;
+  color: #ff3366;
+  margin-bottom: 10px;
+}
+blockquote.inner cite {
+  font-size: 12px;
+  color: #8a959e;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "brandon-grotesque", sans-serif;
+}
+
+h1 {
+  font: 300 45px/65px "Open Sans", "open-sans", sans-serif;
+  margin-bottom: 75px;
+  color: #323a45;
+}
+
+.inside-h2 {
+  display: block;
+  font: 300 35px/52px "Open Sans", "open-sans", sans-serif;
+  color: #323a45;
+  margin-bottom: 55px;
+}
+
+h3 {
+  font: 700 40px/1.5em "brandon-grotesque", sans-serif;
+  color: #323a45;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.container {
+  background-color: white;
+  padding: 80px 0;
+  position: relative;
+}
+.container.alt {
+  background-color: #f9f9fa;
+}
+.container.dark h1, .container.dark h2, .container.dark h3, .container.dark h4, .container.dark h5 {
+  color: white;
+}
+.container.dark-blue {
+  background: #323a45;
+}
+.container.dark-blue h1, .container.dark-blue h2, .container.dark-blue h3, .container.dark-blue h4, .container.dark-blue h5 {
+  color: white;
+}
+.container .inside {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  clear: both;
+}
+.container .inside:before, .container .inside:after {
+  content: " ";
+  display: table;
+}
+.container .inside:after {
+  clear: both;
+}
+.container .split {
+  float: left;
+  display: block;
+  margin-right: 3.125%;
+  width: 48.4375%;
+}
+.container .split:last-child {
+  margin-right: 0;
+}
+.inline-block {
+  display: inline-block;
+  display: inline;
+}
+
+p.button.outline a {
+  background: none;
+  border: solid 1px #fff;
+  padding: 19px 39px;
+}
+p.button.outline a:hover {
+  background: #777f86;
+  background: rgba(255, 255, 255, 0.3);
+}
+p.button.blue a, p.button.blue input {
+  background: #2f7bbd;
+}
+p.button.blue a:hover, p.button.blue input:hover {
+  background: #3888ce;
+}
+p.button.white a {
+  background: white;
+  color: #2f7bbd;
+}
+p.button.white a:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+p.button.small a {
+  font-size: 13px;
+  padding: 12px 25px;
+}
+p.button a,
+p.button input,
+p.button button {
+  display: inline-block;
+  padding: 21px 40px 19px;
+  background: #ff3366;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  line-height: 1em;
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  -moz-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+p.button a:hover,
+p.button input:hover,
+p.button button:hover {
+  background: #f42156;
+}
+p.button input {
+  padding: 23px 40px 22px;
+}
+
+form {
+  display: inline-block;
+}
+form p {
+  position: relative;
+  float: left;
+  margin: 0;
+}
+form input,
+form textarea {
+  font: 400 18px/1em "Open Sans", "open-sans", sans-serif;
+  color: #8a959e;
+}
+form input.error,
+form textarea.error {
+  border-color: #ff3366;
+  box-shadow: 0 0 0 1px #ff3366;
+}
+form textarea {
+  overflow: auto;
+}
+form label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  color: #8a959e;
+  margin: 16px 0px 0px 16px;
+  font-weight: 400;
+}
+form label.error {
+  display: none !important;
+}
+form input[type=text],
+form input[type=search],
+form input[type=email],
+form input[type=password] {
+  background: white;
+  width: 232px;
+  line-height: 1em;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 18px 15px;
+  margin-right: 10px;
+  border: 1px solid #d4d7da;
+}
+form input[type=text].error,
+form input[type=search].error,
+form input[type=email].error,
+form input[type=password].error {
+  border-color: #ff3366;
+}
+
+
+.signup-form-wrapper button,
+.hero-signup-wrapper button {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 62px;
+  line-height: 62px;
+  margin-top: 1px;
+}
+.signup-form-wrapper p.terms,
+.hero-signup-wrapper p.terms {
+  font-size: 12px;
+  margin-top: 31px;
+}
+.signup-form-wrapper p.terms a,
+.hero-signup-wrapper p.terms a {
+  color: #747c83;
+  text-decoration: underline;
+}
+.signup-form-wrapper p.terms a:hover,
+.hero-signup-wrapper p.terms a:hover {
+  color: #ff3366;
+}
+
+.home .hero-signup-wrapper, .home2 .hero-signup-wrapper, .home3 .hero-signup-wrapper {
+  padding: 45px 30px 0;
+}
+.home .hero-signup-wrapper p, .home2 .hero-signup-wrapper p, .home3 .hero-signup-wrapper p {
+  display: block;
+  line-height: 1em;
+  margin: 0 5px 10px;
+  display: block;
+  float: none;
+}
+@media screen and (min-width: 830px) {
+  .home .hero-signup-wrapper p, .home2 .hero-signup-wrapper p, .home3 .hero-signup-wrapper p {
+    margin-bottom: 0;
+  }
+}
+.home .hero-signup-wrapper p label, .home2 .hero-signup-wrapper p label, .home3 .hero-signup-wrapper p label {
+  font-size: 14px;
+  margin-top: 16px;
+}
+@media screen and (min-width: 830px) {
+  .home .hero-signup-wrapper p, .home2 .hero-signup-wrapper p, .home3 .hero-signup-wrapper p {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .home .hero-signup-wrapper p, .home2 .hero-signup-wrapper p, .home3 .hero-signup-wrapper p {
+    display: block;
+    float: left;
+  }
+}
+.home .hero-signup-wrapper p input[type=text], .home2 .hero-signup-wrapper p input[type=text], .home3 .hero-signup-wrapper p input[type=text], .home .hero-signup-wrapper p input[type=password], .home2 .hero-signup-wrapper p input[type=password], .home3 .hero-signup-wrapper p input[type=password] {
+  border: none;
+  font-size: 14px;
+  height: 50px;
+  margin-right: 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  width: 232px;
+}
+.home .hero-signup-wrapper p button[type=submit], .home2 .hero-signup-wrapper p button[type=submit], .home3 .hero-signup-wrapper p button[type=submit] {
+  border-radius: 4px;
+  display: block;
+  height: 50px;
+  padding: 16px 30px 14px;
+  width: 232px;
+}
+@media screen and (min-width: 830px) {
+  .home .hero-signup-wrapper p button[type=submit], .home2 .hero-signup-wrapper p button[type=submit], .home3 .hero-signup-wrapper p button[type=submit] {
+    margin-top: 18px;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .home .hero-signup-wrapper p button[type=submit], .home2 .hero-signup-wrapper p button[type=submit], .home3 .hero-signup-wrapper p button[type=submit] {
+    display: inline-block;
+    margin-top: 0;
+    width: auto;
+  }
+}
+
+.ico-user {
+  display: inline-block;
+  vertical-align: middle;
+  display: inline;
+  height: 24px;
+  width: 24px;
+  background-image: url('../../img/ico-user.png');
+  background-position: 0 -474px;
+  background-repeat: no-repeat;
+}
+
+.ico-email {
+  display: inline-block;
+  vertical-align: middle;
+  display: inline;
+  height: 24px;
+  width: 24px;
+  background-image: url('../../img/ico-user.png');
+  background-position: 0 -386px;
+  background-repeat: no-repeat;
+}
+
+.ico-lock {
+  display: inline-block;
+  vertical-align: middle;
+  display: inline;
+  height: 24px;
+  width: 24px;
+  background-image: url('../../img/ico-user.png');
+  background-position: 0 -430px;
+  background-repeat: no-repeat;
+}
+
+.footer-signup {
+  text-align: center;
+  padding: 160px 0 145px;
+}
+.footer-signup h2 {
+  font-size: 30px;
+}
+.footer-signup p i {
+  position: absolute;
+  top: 18px;
+  left: 15px;
+}
+.footer-signup p label {
+  margin-left: 50px;
+}
+.footer-signup p input[type=text], .footer-signup p input[type=password] {
+  width: 280px;
+  height: 63px;
+  padding-left: 48px;
+}
+@media (max-width: 1215px) {
+  .footer-signup p input[type=text], .footer-signup p input[type=password] {
+    width: 270px;
+  }
+  .footer-signup p button[type=submit] {
+    padding: 20px;
+  }
+}
+@media (max-width: 1145px) {
+  .footer-signup p input[type=text], .footer-signup p input[type=password] {
+    width: 230px;
+  }
+}
+.footer-signup p.terms a:hover {
+  color: #fff;
+}
+.footer-signup p.trust {
+  margin-top: 100px;
+  color: #8a959e;
+  font: 300 italic 22px/1em "Open Sans", "open-sans", sans-serif;
+}
+.footer-signup ul {
+  display: block;
+  width: 984px;
+  margin: 0px auto;
+  padding-top: 48px;
+}
+.footer-signup li {
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer-signup li.stretch {
+  width: 100%;
+  font-size: 0;
+  line-height: 0;
+}
+.footer-signup li a {
+  vertical-align: bottom;
+  overflow: hidden;
+  text-indent: 9000px;
+  text-transform: capitalize;
+  position: relative;
+}
+.footer-signup .adobe a {
+  display: inline-block;
+  vertical-align: middle;
+  display: inline;
+  height: 23px;
+  width: 99px;
+  background-image: url('../img/sprites/global-s116e8c6936.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.footer-signup .ebay a {
+  display: inline-block;
+  vertical-align: middle;
+  display: inline;
+  height: 33px;
+  width: 88px;
+  background-image: url('../img/sprites/global-s116e8c6936.png');
+  background-position: 0 -187px;
+  background-repeat: no-repeat;
+  top: 1px;
+}
+.footer-signup .zappos a {
+  display: inline-block;
+  vertical-align: middle;
+  display: inline;
+  height: 37px;
+  width: 97px;
+  background-image: url('../img/sprites/global-s116e8c6936.png');
+  background-position: 0 -1346px;
+  background-repeat: no-repeat;
+  top: 5px;
+}
+.footer-signup .shopify a {
+  display: inline-block;
+  vertical-align: middle;
+  display: inline;
+  height: 35px;
+  width: 124px;
+  background-image: url('../img/sprites/global-s116e8c6936.png');
+  background-position: 0 -1291px;
+  background-repeat: no-repeat;
+}
+.footer-signup .evernote a {
+  display: inline-block;
+  vertical-align: middle;
+  display: inline;
+  height: 36px;
+  width: 141px;
+  background-image: url('../img/sprites/global-s116e8c6936.png');
+  background-position: 0 -240px;
+  background-repeat: no-repeat;
+  top: 6px;
+}
+.footer-signup .box a {
+  display: inline-block;
+  vertical-align: middle;
+  display: inline;
+  height: 32px;
+  width: 56px;
+  background-image: url('../img/sprites/global-s116e8c6936.png');
+  background-position: 0 -43px;
+  background-repeat: no-repeat;
+  top: -3px;
+}
+.footer-signup .zendesk a {
+  display: inline-block;
+  vertical-align: middle;
+  display: inline;
+  height: 34px;
+  width: 133px;
+  background-image: url('../img/sprites/global-s116e8c6936.png');
+  background-position: 0 -1403px;
+  background-repeat: no-repeat;
+  top: -3px;
+}

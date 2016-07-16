@@ -1,0 +1,149 @@
+@font-face {
+    font-family: "Oculus Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Oculus Sans Regular"), local("OculusSans-Regular"), url(../../fonts/eosixMqH5Qq.woff) format("woff")
+}
+
+@font-face {
+    font-family: "Oculus Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Oculus Sans SemiBold"), local("OculusSans-SemiBold"), url(../../fonts/FuBm7mI-CXG.woff) format("woff")
+}
+h1 {
+    font: 900 40px/48px "Oculus Sans", "Arial", "Helvetica", sans-serif;
+    margin: 0
+}
+
+h2 {
+    font: 900 30px/38px "Oculus Sans", "Arial", "Helvetica", sans-serif;
+    margin: 0
+}
+
+h3 {
+    font: 400 30px/24px "Oculus Sans", "Arial", "Helvetica", sans-serif;
+    margin: 0
+}
+
+h4 {
+    font: 700 22px/32px "Oculus Sans", "Arial", "Helvetica", sans-serif;
+    margin: 0
+}
+
+h5 {
+    font: 700 18px/26px "Oculus Sans", "Arial", "Helvetica", sans-serif;
+    margin: 0
+}
+
+h6 {
+    font: 700 16px/24px "Oculus Sans", "Arial", "Helvetica", sans-serif;
+    margin: 0
+}
+
+._4f_5 {
+    background: #fff;
+    padding-bottom: 0
+}
+
+._4f_6 {
+    list-style: none;
+    margin: 0;
+    max-width: none;
+    min-width: 0;
+    padding: 0
+}
+
+._4f_7 {
+    background: #282828;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    width: 100%
+}
+
+._4f_6:before,
+._4f_7:before,
+._4f_6:after,
+._4f_7:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0
+}
+
+._4f_6:after,
+._4f_7:after {
+    clear: both
+}
+
+._4f_8 {
+    display: block
+}
+
+._4f_a {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    opacity: .3;
+    text-align: center;
+    transition: transform .3s, opacity .3s;
+    width: 100%
+}
+.a1{
+  background-image: url(../../img/eve-valkyrie.jpg);
+}
+
+.a2{
+  background-image: url(../../img/luckys-tale.jpg);
+}
+
+.a3{
+  background-image: url(../../img/oc3-stage-image.jpg);
+}
+
+._4f_7:hover ._4f_a {
+    opacity: .8;
+    transform: scale(1.1, 1.1)
+}
+
+._4f_b {
+    box-sizing: border-box;
+    padding: 0 32px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%
+}
+
+._4f_c {
+    color: #a4a5a6;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 16px;
+    margin: 0;
+    text-align: center
+}
+
+._4f_d {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    margin: 0;
+    text-align: center;
+    text-transform: inherit;
+}
+
+@media screen and (min-width: 767px) {
+    ._4f_7 {
+        float: left;
+        width: 33.33333333%
+    }
+}

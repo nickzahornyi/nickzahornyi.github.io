@@ -1,0 +1,648 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js"></script>
+	<title>Test</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/main.min.js"></script>
+	</head>
+<body>
+<!-- HEADER -->
+  <div id="shell-header" class="shell-header shell-responsive  global-sticky">
+      <div class="shell-header-wrapper">
+          <div class="shell-header-top">
+              <div class="shell-header-brand">
+                  <a id="srv_shellHeaderMicrosoftLogo" href="https://www.microsoft.com/" title="Microsoft">
+                      <img src="img/microsoft.png" alt="Microsoft">
+                  </a>
+              </div>
+              <div class="shell-header-nav-wrapper">
+                  <ul class="shell-header-nav" id="srv_shellHeaderNav">
+                      <li class="shell-header-user-mobile-container"></li>
+                      <li class="shell-header-dropdown">
+                          <div class="shell-header-dropdown-label">
+                              <a id="Store-navigation" href="javascript:void(0)"> Store </a>
+                          </div>
+                          <div class="shell-header-dropdown-content ">
+                              <dl class="shell-header-dropdown-tab  ">
+                                  <dt class="shell-header-dropdown-tab-label shell-header-L2menu-direct-link">
+                                      <a href="http://www.microsoftstore.com/store/msusa/en_US/home">Store home</a>
+                                  </dt>
+																	<dd></dd>
+                              </dl>
+                              <dl class="shell-header-dropdown-tab">
+                                  <dt class="shell-header-dropdown-tab-label">
+                                      <a href="javascript:void(0)">Devices<i class="shell-icon-dropdown facing-right"></i>
+                                      </a>
+                                  </dt>
+                                  <dd class="shell-header-dropdown-tab-content">
+                                      <ul class="shell-header-dropdown-tab-list">
+                                          <li>
+                                              <a href="http://www.microsoftstore.com/store/msusa/en_US/cat/All-Surface/categoryID.69403400" class="shell-l3-list-item">Microsoft Surface</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoftstore.com/store/msusa/en_US/cat/All-PCs-tablets/categoryID.69404700" class="shell-l3-list-item">PCs &amp; tablets</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoftstore.com/store/msusa/en_US/cat/categoryID.69405400" class="shell-l3-list-item">Xbox</a>
+                                          </li>
+                                          <li>
+                                              <a href="https://www.microsoftstore.com/store/msusa/en_US/cat/Virtual-and-Augmented-Reality/categoryID.594470000?icid=en_US_Store_UH_devices_vr" class="shell-l3-list-item">Virtual reality</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoftstore.com/store/msusa/en_US/cat/All-accessories/categoryID.69407900" class="shell-l3-list-item">Accessories</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoftstore.com/store/msusa/en_US/cat/All-Windows-Phone/categoryID.69406200" class="shell-l3-list-item">Windows phone</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoftstore.com/store/msusa/en_US/cat/categoryID.69889600" class="shell-l3-list-item">Microsoft Band</a>
+                                          </li>
+                                      </ul>
+                                  </dd>
+                              </dl>
+                              <dl class="shell-header-dropdown-tab  ">
+                                  <dt class="shell-header-dropdown-tab-label">
+                                      <a href="javascript:void(0)">Software<i class="shell-icon-dropdown facing-right"></i>
+                                      </a>
+                                  </dt>
+                                  <dd class="shell-header-dropdown-tab-content">
+                                      <ul class="shell-header-dropdown-tab-list">
+                                          <li>
+                                              <a href="http://www.microsoftstore.com/store/msusa/en_US/cat/All-Office/categoryID.69403900" class="shell-l3-list-item">Office</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoftstore.com/store/msusa/en_US/cat/categoryID.70036700" class="shell-l3-list-item">Windows</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoftstore.com/store/msusa/en_US/cat/All-additional-software/categoryID.69407400" class="shell-l3-list-item">Additional software</a>
+                                          </li>
+                                      </ul>
+                                  </dd>
+                              </dl>
+                              <dl class="shell-header-dropdown-tab">
+                                  <dt class="shell-header-dropdown-tab-label">
+                                      <a href="javascript:void(0)">Apps<i class="shell-icon-dropdown facing-right"></i>
+                                      </a>
+                                  </dt>
+                                  <dd class="shell-header-dropdown-tab-content">
+                                      <ul class="shell-header-dropdown-tab-list">
+                                          <li>
+                                              <a href="https://www.microsoft.com/en-us/store/apps" class="shell-l3-list-item">All apps</a>
+                                          </li>
+                                          <li>
+                                              <a href="https://www.microsoft.com/en-us/store/apps/windows">Windows apps</a>
+                                          </li>
+                                          <li>
+                                              <a href="https://www.microsoft.com/en-us/store/apps/windows-phone" class="shell-l3-list-item">Windows phone apps</a>
+                                          </li>
+                                      </ul>
+                                  </dd>
+                              </dl>
+                              <dl class="shell-header-dropdown-tab">
+                                  <dt class="shell-header-dropdown-tab-label">
+                                      <a href="javascript:void(0)">Games<i class="shell-icon-dropdown facing-right"></i>
+                                      </a>
+                                  </dt>
+                                  <dd class="shell-header-dropdown-tab-content">
+                                      <ul class="shell-header-dropdown-tab-list">
+                                          <li>
+                                              <a href="http://www.microsoftstore.com/store/msusa/en_US/cat/Xbox-One-games/categoryID.69405600" class="shell-l3-list-item">Xbox One games</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoftstore.com/store/msusa/en_US/cat/Xbox-360-games/categoryID.69405800" class="shell-l3-list-item">Xbox 360 games</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoftstore.com/store/msusa/en_US/list/PC-games/categoryID.62688000?icid=en_US_Store_UH_games_PC" class="shell-l3-list-item">PC games</a>
+                                          </li>
+                                          <li>
+                                              <a href="https://www.microsoft.com/en-us/store/games/windows" class="shell-l3-list-item">Windows games</a>
+                                          </li>
+                                          <li>
+                                              <a href="https://www.microsoft.com/en-us/store/games/windows-phone" class="shell-l3-list-item">Windows phone games</a>
+                                          </li>
+                                      </ul>
+                                  </dd>
+                              </dl>
+                              <dl class="shell-header-dropdown-tab">
+                                  <dt class="shell-header-dropdown-tab-label">
+                                      <a href="javascript:void(0)">Entertainment<i class="shell-icon-dropdown facing-right"></i>
+                                      </a>
+                                  </dt>
+                                  <dd class="shell-header-dropdown-tab-content">
+                                      <ul class="shell-header-dropdown-tab-list">
+                                          <li>
+                                              <a href="https://www.microsoft.com/en-us/store/entertainment" class="shell-l3-list-item">All Entertainment</a>
+                                          </li>
+                                          <li>
+                                              <a href="https://www.microsoft.com/en-us/store/movies-and-tv" class="shell-l3-list-item">Movies &amp; TV</a>
+                                          </li>
+                                          <li>
+                                              <a href="https://www.microsoft.com/en-us/store/music" class="shell-l3-list-item">Music</a>
+                                          </li>
+                                      </ul>
+                                  </dd>
+                              </dl>
+                              <dl class="shell-header-dropdown-tab  ">
+                                  <dt class="shell-header-dropdown-tab-label">
+                                   <a href="javascript:void(0)">Business &amp; Education<i class="shell-icon-dropdown facing-right"></i></a>
+                                  </dt>
+                                  <dd class="shell-header-dropdown-tab-content">
+                                      <ul class="shell-header-dropdown-tab-list">
+                                          <li>
+                                              <a href="http://www.microsoftstore.com/store/msusa/en_US/cat/Business/categoryID.69408700">Business Store</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoftstore.com/store/msusa/en_US/edu" class="shell-l3-list-item">Education Store</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoftstore.com/store/msusa/en_US/cat/Developer/categoryID.69418300?icid=en_US_Store_UH_BusEd_Dev" class="shell-l3-list-item">Developer</a>
+                                          </li>
+                                      </ul>
+                                  </dd>
+                              </dl>
+                              <dl class="shell-header-dropdown-tab">
+                                  <dt class="shell-header-dropdown-tab-label">
+                                      <a href="javascript:void(0)">Sale<i class="shell-icon-dropdown facing-right"></i></a>
+                                  </dt>
+                                  <dd class="shell-header-dropdown-tab-content">
+                                      <ul class="shell-header-dropdown-tab-list">
+                                          <li>
+                                              <a href="https://www.microsoftstore.com/store/msusa/en_US/cat/Back-to-school-essentials/categoryID.67998200?icid=en_US_Store_UH_sale_gm_bts" class="shell-l3-list-item">Back-to-school essentials</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoftstore.com/store/msusa/en_US/cat/Sale/categoryID.69403000" class="shell-l3-list-item">Sale</a>
+                                          </li>
+                                      </ul>
+                                  </dd>
+                              </dl>
+                              <dl class="shell-header-dropdown-tab">
+                                  <dt class="shell-header-dropdown-tab-label shell-header-L2menu-direct-link">
+                                      <a href="http://www.microsoft.com/en-us/store/locations/find-a-store?icid=L_navAB_FindAStore">Find a store</a>
+                                  </dt>
+																	<dd></dd>
+                              </dl>
+                              <dl class="shell-header-dropdown-tab  ">
+                                  <dt class="shell-header-dropdown-tab-label shell-header-L2menu-direct-link">
+                                      <a href="https://www.microsoft.com/en-us/store/gift-cards">Gift cards</a>
+                                  </dt>
+																	<dd></dd>
+                              </dl>
+                          </div>
+                      </li>
+                      <li class="shell-header-dropdown">
+                          <div class="shell-header-dropdown-label">
+                              <a id="Products-navigation" href="javascript:void(0)">Products </a>
+                          </div>
+                          <div class="shell-header-dropdown-content ">
+                              <dl class="shell-header-dropdown-tab">
+                                  <dt class="shell-header-dropdown-tab-label">
+                                      <a href="javascript:void(0)">Software &amp; services<i class="shell-icon-dropdown facing-right"></i></a>
+                                  </dt>
+                                  <dd class="shell-header-dropdown-tab-content">
+                                      <ul class="shell-header-dropdown-tab-list">
+                                          <li>
+                                              <a href="https://www.microsoft.com/en-us/windows" class="shell-l3-list-item">Windows</a>
+                                          </li>
+                                          <li>
+                                              <a href="https://products.office.com/en-us/home" class="shell-l3-list-item">Office</a>
+                                          </li>
+                                          <li>
+                                              <a href="https://www.microsoft.com/en-us/download/default.aspx" class="shell-l3-list-item">Free downloads &amp; security</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" class="shell-l3-list-item">Internet Explorer</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoft.com/en-us/windows/microsoft-edge" class="shell-l3-list-item">Microsoft Edge</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.skype.com/en/" class="shell-l3-list-item">Skype</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.onenote.com/" class="shell-l3-list-item">OneNote</a>
+                                          </li>
+                                          <li>
+                                              <a href="https://onedrive.live.com/about/en-us/" class="shell-l3-list-item">OneDrive</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoft.com/microsoft-health/en-us" class="shell-l3-list-item">Microsoft Health</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.msn.com/?ocid=HEA000" class="shell-l3-list-item">MSN</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.bing.com/" class="shell-l3-list-item">Bing</a>
+                                          </li>
+                                          <li>
+                                              <a href="https://www.microsoft.com/en-us/groove" class="shell-l3-list-item">Microsoft Groove</a>
+                                          </li>
+                                          <li>
+                                              <a href="https://www.microsoft.com/en-us/movies-and-tv" class="shell-l3-list-item">Microsoft Movies &amp; TV</a>
+                                          </li>
+                                      </ul>
+                                  </dd>
+                              </dl>
+                              <dl class="shell-header-dropdown-tab">
+                                  <dt class="shell-header-dropdown-tab-label">
+                                      <a href="javascript:void(0)">Devices &amp; Xbox<i class="shell-icon-dropdown facing-right"></i></a>
+                                  </dt>
+                                  <dd class="shell-header-dropdown-tab-content">
+                                      <ul class="shell-header-dropdown-tab-list">
+                                          <li>
+                                              <a href="https://www.microsoft.com/devices/en-us" class="shell-l3-list-item">All Microsoft devices</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoft.com/surface/en-us" class="shell-l3-list-item">Microsoft Surface</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoftstore.com/store/msusa/en_US/cat/Computers/categoryID.62684600" class="shell-l3-list-item">All Windows PCs &amp; tablets</a>
+                                          </li>
+                                          <li>
+                                              <a href="https://www.microsoft.com/accessories/en-us" class="shell-l3-list-item">PC accessories</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.xbox.com/" class="shell-l3-list-item">Xbox &amp; games</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoft.com/Microsoft-Band/en-us" class="shell-l3-list-item">Microsoft Band</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoft.com/en-us/mobile/" class="shell-l3-list-item">Microsoft Lumia</a>
+                                          </li>
+                                          <li>
+                                              <a href="https://www.microsoft.com/en-us/windows/phones" class="shell-l3-list-item">All Windows phones</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoft.com/microsoft-hololens/en-us" class="shell-l3-list-item">Microsoft HoloLens</a>
+                                          </li>
+                                      </ul>
+                                  </dd>
+                              </dl>
+                              <dl class="shell-header-dropdown-tab">
+                                  <dt class="shell-header-dropdown-tab-label">
+                                      <a href="javascript:void(0)">For business<i class="shell-icon-dropdown facing-right"></i></a>
+                                  </dt>
+                                  <dd class="shell-header-dropdown-tab-content">
+                                      <ul class="shell-header-dropdown-tab-list">
+                                          <li>
+                                              <a href="http://www.microsoft.com/en-us/server-cloud/" class="shell-l3-list-item">Cloud Platform</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://azure.microsoft.com/" class="shell-l3-list-item">Microsoft Azure</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoft.com/en-us/dynamics/default.aspx" class="shell-l3-list-item">Microsoft Dynamics</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoft.com/en-us/windows/business/default.aspx" class="shell-l3-list-item">Windows for business</a>
+                                          </li>
+                                          <li>
+                                              <a href="https://products.office.com/en-us/business/office" class="shell-l3-list-item">Office for business</a>
+                                          </li>
+                                          <li>
+                                              <a href="https://products.office.com/en-us/skype-for-business" class="shell-l3-list-item">Skype for business</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoft.com/surface/en-us/business/overview" class="shell-l3-list-item">Surface for business</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoft.com/enterprise" class="shell-l3-list-item">Enterprise solutions</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoft.com/en-us/business/" class="shell-l3-list-item">Small business solutions</a>
+                                          </li>
+                                          <li>
+                                              <a href="https://pinpoint.microsoft.com/" class="shell-l3-list-item">Find a solutions provider</a>
+                                          </li>
+                                          <li>
+                                              <a href="https://www.microsoft.com/en-us/licensing/default.aspx" class="shell-l3-list-item">Volume Licensing</a>
+                                          </li>
+                                      </ul>
+                                  </dd>
+                              </dl>
+                              <dl class="shell-header-dropdown-tab">
+                                  <dt class="shell-header-dropdown-tab-label">
+                                      <a href="javascript:void(0)">For developers &amp; IT pros<i class="shell-icon-dropdown facing-right"></i></a>
+                                  </dt>
+                                  <dd class="shell-header-dropdown-tab-content">
+                                      <ul class="shell-header-dropdown-tab-list">
+                                          <li>
+                                              <a href="https://dev.windows.com/en-us" class="shell-l3-list-item">Develop Windows apps</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://azure.microsoft.com/" class="shell-l3-list-item">Microsoft Azure</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://msdn.microsoft.com/en-us/" class="shell-l3-list-item">MSDN</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://technet.microsoft.com/en-us/" class="shell-l3-list-item">TechNet</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.visualstudio.com/" class="shell-l3-list-item">Visual Studio</a>
+                                          </li>
+                                      </ul>
+                                  </dd>
+                              </dl>
+                              <dl class="shell-header-dropdown-tab">
+                                  <dt class="shell-header-dropdown-tab-label">
+                                      <a href="javascript:void(0)">For students &amp; educators<i class="shell-icon-dropdown facing-right"></i></a>
+                                  </dt>
+                                  <dd class="shell-header-dropdown-tab-content">
+                                      <ul class="shell-header-dropdown-tab-list">
+                                          <li>
+                                              <a href="http://www.microsoft.com/en-us/education/products/office/default.aspx" class="shell-l3-list-item">Office for students</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoft.com/en-us/education/products/onenote/default.aspx" class="shell-l3-list-item">OneNote in classroom</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoftstore.com/store/msusa/en_US/edu" class="shell-l3-list-item">Shop PCs &amp; tablets perfect for students</a>
+                                          </li>
+                                          <li>
+                                              <a href="http://www.microsoft.com/en-us/education" class="shell-l3-list-item">Microsoft in Education</a>
+                                          </li>
+                                      </ul>
+                                  </dd>
+                              </dl>
+                          </div>
+                      </li>
+                      <li id="l1_support" class="shell-header-dropdown-label"><a class="top-level-link-text ctl_headerNavLink" href="https://support.microsoft.com/en-us">Support</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="shell-header-user-container">
+                  <dl class="shell-header-user">
+                      <dt>
+                          <div id="meControl">
+                              <div class="msame_Header msame_unauth" tabindex="60" style="height: 48px;">
+                                  <div class="msame_Header_name msame_TxtTrunc" style="line-height: 48px;">Sign in</div>
+                                  <div class="msame_Header_chev"></div>
+                              </div>
+                          </div>
+                      </dt>
+											<dd></dd>
+                  </dl>
+              </div>
+              <div class="shell-header-nav-toggle ">
+                  <button class="shell-header-toggle-menu"><i class="shell-icon-menu"></i></button>
+              </div>
+              <ul class="shell-header-toggle">
+                  <li>
+                      <button class="shell-header-toggle-search" type="button" data-bi-name="Toggle Search Icon"><i class="shell-icon-search"></i></button>
+                  </li>
+                  <li>
+                      <a id="shell-header-shopping-cart-mobile" href="https://www.microsoftstore.com/store/msusa/en_US/DisplayThreePgCheckoutShoppingCartPage" class="shell-header-toggle-cart" title="Cart">
+                          <i id="toggle-shell-icon-cart" class="shell-icon-cart"></i>
+                          <span class="sr-only">Cart</span><span class="shopping-cart-amount">0</span>
+                      </a>
+                  </li>
+              </ul>
+              <div class="shell-header-actions">
+                  <form id="srv_shellHeaderSearchForm" class="shell-search" role="search" action="https://www.microsoft.com/en-us/search/result.aspx" method="GET" autocomplete="off" onsubmit=" return window.msCommonShell.onSearch(this) ">
+                      <div class="shell-search-wrapper">
+                          <label for="cli_shellHeaderSearchInput" class="sr-only">Search Microsoft</label>
+                          <input id="cli_shellHeaderSearchInput" type="search" title="Search Microsoft.com" name="q" data-bi-dnt="" placeholder="Search Microsoft.com" maxlength="200" tabindex="30">
+                          <input type="hidden" name="form" data-bi-dnt="" value="MSHOME">
+                          <button type="submit" title="Search" data-bi-dnt="" tabindex="40">
+                              <i class="shell-icon-search"></i>
+                              <span class="sr-only">Search</span>
+                          </button>
+                          <div id="cli_searchSuggestionsContainer" class="shell-search-dropdown-container">
+                              <div class="search-dropdown">
+                                  <div class="dropdown-item">
+                                      <ul id="cli_searchSuggestionsResults" data-bi-name="Search Suggestions" data-bi-source="UnifiedSearch"></ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+                  <div class="shell-header-cart">
+                      <a id="shell-header-shopping-cart" href="https://www.microsoftstore.com/store/msusa/en_US/DisplayThreePgCheckoutShoppingCartPage" data-bi-name="Shopping Cart" title="Cart">
+                          <i class="shell-icon-cart"></i>
+                          <span class="sr-only">Cart</span>
+                          <span class="shopping-cart-amount">0</span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+<!-- BANNER -->
+  <div class="en  business-2015--exp_GRAY-BACKGROUND business-2015--lux business-2015--lux--V1 business-2015--lux-photo business-2015--lux-footer-roi business-2015 windows business-theme">
+  	<section class="hero hero--subline hero--female">
+  		<div class="hero__background-container hero__background-container--female"></div>
+  		<div class="top-section">
+  			<div class="top-section__container">
+  				<h1 class="hero__header">Securely share, sync, and collaborate</h1>
+  				<h2 class="hero__sub-header">Dropbox Business is the secure file sharing and storage solution that employees love and IT admins trust.</h2>
+  				<div class="try-business-cta">
+  					<a href="https://www.dropbox.com/business/try" class="try-business-cta__button button-big button-primary">Try free for 30 days</a>
+  					<span class="try-business-cta__footer no-break">or
+  					<a href="https://www.dropbox.com/business/buy">purchase now</a>
+  					</span>
+  				</div>
+  			</div>
+  		</div>
+  	</section>
+  </div>
+<!-- SUBSCRIBE -->
+  <div class="container dark-blue footer-signup signup-form-wrapper">
+  	<div class="inside">
+  		<h2 class="inside-h2">Join over 2 million designers already using InVision. Get InVision <strong>free</strong> forever!</h2>
+  		<form method="POST" class="signup_form" action="https://projects.invisionapp.com/d/signup/process" novalidate="novalidate">
+  			<input type="hidden" name="uploadDemoID" value="">
+  			<input type="hidden" name="source" value="">
+  			<input type="hidden" name="referer" value="https://www.google.com.ua/">
+  			<input type="hidden" name="keywords" value="">
+  			<input type="hidden" name="submissionForm" value="Marketing Site">
+  			<input type="hidden" name="xsrfFormToken" value="1bdc11dbd9a9815589f0e14bf459b192">
+  			<p>
+  				<label for="signup_name"></label>
+  				<i class="ico-user"></i>
+  				<input type="text" placeholder="Your Name" name="name" id="signup_name" value="" autocomplete="off" spellcheck="false">
+  			</p>
+  			<p>
+  				<label for="signup_email"></label>
+  				<i class="ico-email"></i>
+  				<input type="text" placeholder="Email Address" name="email" id="signup_email" value="" autocomplete="off" spellcheck="false">
+  			</p>
+  			<p>
+  				<label for="signup_password"></label>
+  				<i class="ico-lock"></i>
+  				<input type="password" placeholder="Create a Password" name="password" id="signup_password" value="" autocomplete="off" spellcheck="false">
+  			</p>
+  			<p class="button"><button type="submit">Get Started — Free Forever!</button></p>
+  		</form>
+  		<p class="terms">By clicking "Get Started — Free Forever!" I agree to InVision's <a href="https://www.invisionapp.com/terms">Terms of Service.</a></p>
+  	</div>
+  </div>
+<!-- SPECIAL-OFFERS -->
+  <div class="_4f_5">
+      <ul class="_4f_6">
+          <li class="_4f_7">
+              <a class="_4f_8" href="https://www.oculus.com/rift/#eve-valkyrie">
+                  <div class="_4f_a a1"></div>
+                  <div class="_4f_b">
+                      <h4 class="_4f_c">FEATURED CONTENT</h4>
+                      <h3 class="_4f_d">EVE: Valkyrie</h3></div>
+              </a>
+          </li>
+          <li class="_4f_7">
+              <a class="_4f_8" href="https://www.oculus.com/rift/#luckys-tale">
+                  <div class="_4f_a a2"></div>
+                  <div class="_4f_b">
+                      <h4 class="_4f_c">INCLUDED WITH ALL RIFT PURCHASES</h4>
+                      <h3 class="_4f_d">Lucky&#039;s Tale</h3></div>
+              </a>
+          </li>
+          <li class="_4f_7">
+              <a class="_4f_8" href="https://www.oculus.com/en-us/blog/announcing-oculus-connect-3-and-rift-availability-update/">
+                  <div class="_4f_a a3"></div>
+                  <div class="_4f_b">
+                      <h4 class="_4f_c">FEATURED STORY</h4>
+                      <h3 class="_4f_d">Announcing Oculus Connect 3 and Rift Availability Update</h3></div>
+              </a>
+          </li>
+      </ul>
+  </div>
+<!-- FOOTER -->
+	<footer id="ac-globalfooter" class="js no-touch svg no-ie7 no-ie8">
+			<div class="ac-gf-content">
+					<h2 class="ac-gf-label" id="ac-gf-label">Apple Footer</h2>
+					<nav class="ac-gf-directory with-5-columns">
+							<div class="ac-gf-directory-column">
+									<input class="ac-gf-directory-column-section-state" type="checkbox" id="ac-gf-directory-column-section-state-products">
+									<div class="ac-gf-directory-column-section">
+											<label class="ac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-products">
+													<span class="ac-gf-directory-column-section-title">Shop and Learn</span>
+											</label>
+											<a href="http://www.apple.com/#ac-gf-directory-column-section-state-products" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-open"> <span class="ac-gf-directory-column-section-anchor-label">Open Menu</span> </a>
+											<a href="http://www.apple.com/#" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-close"> <span class="ac-gf-directory-column-section-anchor-label">Close Menu</span> </a>
+											<ul class="ac-gf-directory-column-section-list">
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/mac/">Mac</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/ipad/">iPad</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/iphone/">iPhone</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/watch/">Watch</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/tv/">TV</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/music/">Music</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/itunes/">iTunes</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/ipod/">iPod</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/us/shop/goto/buy_accessories">Accessories</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/us/shop/goto/giftcards">Gift Cards</a></li>
+											</ul>
+									</div>
+							</div>
+							<div class="ac-gf-directory-column">
+									<input class="ac-gf-directory-column-section-state" type="checkbox" id="ac-gf-directory-column-section-state-storeservices">
+									<div class="ac-gf-directory-column-section">
+											<label class="ac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-storeservices">
+													<span class="ac-gf-directory-column-section-title">Apple Store</span>
+											</label>
+											<ul class="ac-gf-directory-column-section-list">
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/retail/">Find a Store</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/retail/geniusbar/">Genius Bar</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/retail/learn/">Workshops and Learning</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/retail/learn/youth/">Youth Programs</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="https://itunes.apple.com/app/apple-store/id375380948?mt=8">Apple Store App</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/us/shop/goto/special_deals">Refurbished</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/us/shop/goto/payment_plan">Financing</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/us/shop/goto/reuse_and_recycle">Reuse and Recycling</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/us/shop/goto/account">Order Status</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/us/shop/goto/help">Shopping Help</a></li>
+											</ul>
+									</div>
+							</div>
+							<div class="ac-gf-directory-column">
+									<input class="ac-gf-directory-column-section-state" type="checkbox" id="ac-gf-directory-column-section-state-education">
+									<div class="ac-gf-directory-column-section">
+											<label class="ac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-education">
+													<span class="ac-gf-directory-column-section-title">For Education</span>
+											</label>
+											<a href="http://www.apple.com/#ac-gf-directory-column-section-state-education" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-open"> <span class="ac-gf-directory-column-section-anchor-label">Open Menu</span> </a>
+											<a href="http://www.apple.com/#" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-close"> <span class="ac-gf-directory-column-section-anchor-label">Close Menu</span> </a>
+											<ul class="ac-gf-directory-column-section-list">
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/education/">Apple and Education</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/us/shop/goto/educationrouting">Shop for College</a></li>
+											</ul>
+									</div>
+									<input class="ac-gf-directory-column-section-state" type="checkbox" id="ac-gf-directory-column-section-state-business">
+									<div class="ac-gf-directory-column-section">
+											<label class="ac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-business">
+													<span class="ac-gf-directory-column-section-title">For Business</span>
+											</label>
+											<a href="http://www.apple.com/#ac-gf-directory-column-section-state-business" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-open"> <span class="ac-gf-directory-column-section-anchor-label">Open Menu</span> </a>
+											<a href="http://www.apple.com/#" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-close"> <span class="ac-gf-directory-column-section-anchor-label">Close Menu</span> </a>
+											<ul class="ac-gf-directory-column-section-list">
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/business/">Apple and Business</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/retail/business/">Shop for Business</a></li>
+											</ul>
+									</div>
+							</div>
+							<div class="ac-gf-directory-column">
+									<input class="ac-gf-directory-column-section-state" type="checkbox" id="ac-gf-directory-column-section-state-accounts">
+									<div class="ac-gf-directory-column-section">
+											<label class="ac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-accounts">
+													<span class="ac-gf-directory-column-section-title">Account</span>
+											</label>
+											<a href="http://www.apple.com/#ac-gf-directory-column-section-state-accounts" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-open"> <span class="ac-gf-directory-column-section-anchor-label">Open Menu</span> </a>
+											<a href="http://www.apple.com/#" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-close"> <span class="ac-gf-directory-column-section-anchor-label">Close Menu</span> </a>
+											<ul class="ac-gf-directory-column-section-list">
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="https://appleid.apple.com/us/">Manage Your Apple ID</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/us/shop/goto/account">Apple Store Account</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="https://www.icloud.com/">iCloud.com</a></li>
+											</ul>
+									</div>
+									<input class="ac-gf-directory-column-section-state" type="checkbox" id="ac-gf-directory-column-section-state-responsibility">
+									<div class="ac-gf-directory-column-section">
+											<label class="spanac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-responsibility">
+													<span class="ac-gf-directory-column-section-title">Apple Values</span>
+											</label>
+											<a href="http://www.apple.com/#ac-gf-directory-column-section-state-responsibility" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-open"> <span class="ac-gf-directory-column-section-anchor-label">Open Menu</span> </a>
+											<a href="http://www.apple.com/#" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-close"> <span class="ac-gf-directory-column-section-anchor-label">Close Menu</span> </a>
+											<ul class="ac-gf-directory-column-section-list">
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/accessibility/">Accessibility</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/education/connectED/">Education</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/environment/">Environment</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/diversity/">Inclusion and Diversity</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/privacy/">Privacy</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/supplier-responsibility/">Supplier Responsibility</a></li>
+											</ul>
+									</div>
+							</div>
+							<div class="ac-gf-directory-column">
+									<input class="ac-gf-directory-column-section-state" type="checkbox" id="ac-gf-directory-column-section-state-about">
+									<div class="ac-gf-directory-column-section">
+											<label class="ac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-about">
+													<span class="ac-gf-directory-column-section-title">About Apple</span>
+											</label>
+											<a href="http://www.apple.com/#ac-gf-directory-column-section-state-about" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-open"> <span class="ac-gf-directory-column-section-anchor-label">Open Menu</span> </a>
+											<a href="http://www.apple.com/#" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-close"> <span class="ac-gf-directory-column-section-anchor-label">Close Menu</span> </a>
+											<ul class="ac-gf-directory-column-section-list">
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/about/">Apple Info</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/newsroom/">Newsroom</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/jobs/us/">Job Opportunities</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/pr/">Press Info</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://investor.apple.com/">Investors</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/apple-events/">Events</a></li>
+													<li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="http://www.apple.com/contact/">Contact Apple</a></li>
+											</ul>
+									</div>
+							</div>
+					</nav>
+					<div class="ac-gf-footer">
+							<div class="ac-gf-footer-shop"> More ways to shop: Visit an <a href="http://www.apple.com/retail/">Apple Store</a>, <span class="nowrap">call 1-800-MY-APPLE, or <a href="https://locate.apple.com/">find a reseller</a></span>. </div>
+							<div class="ac-gf-footer-locale"> <a class="ac-gf-footer-locale-link" href="http://www.apple.com/choose-your-country/" title="Choose your country or region" aria-label="United States. Choose your country or region"><span class="ac-gf-footer-locale-flag" data-hires="false"></span>United States</a> </div>
+							<div class="ac-gf-footer-legal">
+									<div class="ac-gf-footer-legal-copyright">Copyright © 2016 Apple Inc. All rights reserved.</div>
+									<div class="ac-gf-footer-legal-links"> <a class="ac-gf-footer-legal-link" href="http://www.apple.com/privacy/privacy-policy/">Privacy Policy</a> <a class="ac-gf-footer-legal-link" href="http://www.apple.com/legal/internet-services/terms/site.html">Terms of Use</a> <a class="ac-gf-footer-legal-link" href="http://www.apple.com/us/shop/goto/help/sales_refunds">Sales and Refunds</a> <a class="ac-gf-footer-legal-link" href="http://www.apple.com/legal/">Legal</a> <a class="ac-gf-footer-legal-link" href="http://www.apple.com/sitemap/">Site Map</a> </div>
+							</div>
+					</div>
+			</div>
+	</footer>
+</body>
+</html>
