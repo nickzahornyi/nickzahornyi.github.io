@@ -1,0 +1,149 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+body{
+  font-family: 'Indie Flower';
+}
+.navbar-default {
+    background-color: #ffffff;
+    border: none;
+}
+.navbar-nav {
+    margin-top: 80px;
+    background-color: rgba(11, 47, 59, 0.5);;
+    width: 95%;
+    padding: 0px;
+    margin-left: 5%;
+}
+.navbar-collapse{
+  padding: 0;
+}
+.navbar-default .navbar-nav>li>a{
+  margin: 0 45px;
+  color: black;
+  font-weight: bold;
+}
+.navbar-default .navbar-nav>li>a:hover{
+  text-decoration: underline;
+  color: black;
+}
+.navbar-default .navbar-nav>li>a.blue{
+  color: blue;
+}
+.navbar-collapse {
+    width: 100%;
+}
+.navbar-brand__img {
+    width: 150px;
+}
+.carousel-img {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+}
+.carousel-inner {
+    width: 100%;
+    top: -20px;
+    background-color: rgba(11, 47, 59, 0.5);
+    padding-bottom: 50px;
+}
+.carousel-control.left{
+background: -webkit-linear-gradient(bottom, transparent, transparent);
+background: -o-linear-gradient(bottom, transparent, transparent);
+background: linear-gradient(to top, transparent, transparent);
+}
+.carousel-control.right{
+  background: -webkit-linear-gradient(bottom, transparent, transparent);
+  background: -o-linear-gradient(bottom, transparent, transparent);
+  background: linear-gradient(to top, transparent, transparent);
+}
+.form {
+    border: 1px solid black;
+    position: absolute;
+    top: 200px;
+    right: 12%;
+    padding: 10px;
+    background-color: rgba(11, 47, 59, 0.2);
+    border-radius: 10px;
+}
+.form input {
+    display: block;
+    margin: 10px 20px;
+    width: 180px;
+}
+.form button {
+    margin-left: 100px;
+}
+.title {
+    position: absolute;
+    top: 200px;
+    left: 12%;
+}
+.article{
+  padding: 50px;
+}
+.article p {
+    text-indent: 20px;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+.article a{
+  text-decoration: underline;
+  margin-left: 45%;
+}
+.article__image{
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+}
+.nav-pagination {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 18px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.nav-pagination p{
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.find-us{
+  padding: 30px 50px 30px 30px;
+  font-size: 18px;
+  text-indent: 20px;
+  line-height: 30px;
+}
+
+
+
+.footer{
+  border: 2px dotted grey;
+  margin-top: 30px;
+  height: 300px;
+}
+.about {
+  margin-top: 20px;
+  padding: 20px;
+  border-right: 2px solid grey;
+}
+.about p{
+  font-size: 18px;
+  text-indent: 20px;
+}
+.contact form{
+  float: right;
+  margin-top: -80px;
+  width: 270px;
+}
+.contact h2{
+  margin: 50px;
+}
+.contact form button{
+  float: right;
+  margin: 20px;
+}
+.contact form a{
+  float: left;
+  margin: 25px;
+  text-decoration: underline;
+}
