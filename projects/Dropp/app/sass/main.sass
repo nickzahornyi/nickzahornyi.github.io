@@ -1,0 +1,573 @@
+@import "_variables.sass"
+a:focus, a:hover
+  text-decoration: none
+  color: inherit
+// HEADER
+.header
+  overflow: hidden
+  &__menu
+    width: $main-width
+    margin: 0 auto
+    height: 110px
+    font-family: $osw
+    font-size: 17px
+    text-transform: uppercase
+  &__open
+    display: none
+    cursor: pointer
+  &__menu-mobile
+    display: none
+    position: absolute
+    background-color: #fff
+    width: 100%
+    z-index: 10
+    .header__nav-mob
+      padding-top: 80px
+      padding-left: 0
+      li
+        list-style: none
+        margin: 10px auto
+        width: 100%
+        a
+          color: #000
+          text-transform: uppercase
+          font-size: 20px
+          font-family: $osw
+          text-align: center
+          width: 100%
+          display: block
+    .mob-wrapper
+      &__close
+        position: absolute
+        top: 45px
+        right: 45px
+        cursor: pointer
+      .header__logo
+        margin-left: 17px
+  &__logo
+    font-size: 70px
+    font-family: $beb
+    float: left
+    color: #000
+    text-transform: uppercase
+    span
+      color: #ff6633
+  &__nav
+    float: right
+    height: 100%
+    margin-top: -20px
+    li
+      float: left
+      list-style: none
+      height: 100%
+      a
+        color: #666
+        height: 100%
+        line-height: 115px
+        padding: 0 15px
+        display: block
+        transition: 0.3s
+        &:hover
+          background-color: #ff6633
+          color: #fff
+          transition: 0.3s
+  .photo
+    height: 700px
+    background-image: url(../img/header-bg.jpg)
+    background-size: cover
+    background-position: top center
+    opacity: 1.5
+  &__title
+    position: absolute
+    top: 280px
+    color: #fff
+    font-size: 124px
+    font-family: $beb
+    text-transform: uppercase
+    width: 100%
+    text-align: center
+  &__button
+    text-align: center
+    position: absolute
+    font-family: $osw
+    font-size: 32px
+    line-height: 58px
+    text-transform: uppercase
+    color: #fff
+    top: 480px
+    left: 50%
+    margin-left: -140px
+    width: 280px
+    height: 58px
+    border-radius: 5px
+    background-color: #ff6633
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75)
+    -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75)
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75)
+    transition: 0.3s
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 1)
+    &:hover
+      -webkit-box-shadow: 0px 0px 15px 1px rgba(255,255,255,0.75)
+      -moz-box-shadow: 0px 0px 15px 1px rgba(255,255,255,0.75)
+      box-shadow: 0px 0px 15px 1px rgba(255,255,255,0.75)
+      color: #fff
+      transition: 0.3s
+    &:focus
+      color: #fff
+.services
+  &__title
+    color: #ff6633
+    text-transform: uppercase
+    font-size: 32px
+    text-align: center
+    border-bottom: 1px solid #999999
+    margin: 0
+    height: 100px
+    line-height: 100px
+    font-family: $osw
+  &-container
+    width: $main-width
+    margin: 0 auto
+    margin-top: 65px
+    margin-bottom: 80px
+  .service
+    img
+      display: block
+      margin: 0 auto
+    &__title
+      font-size: 30px
+      font-family: $osw
+      text-transform: uppercase
+      text-align: center
+      margin-top: 30px
+      font-family: $osw
+    &__text
+      font-family: Arial
+      text-align: center
+      font-size: 16px
+      width: 300px
+      margin: 0 auto
+.portfolio
+  &-container
+    width: 1140px
+    margin: 0 auto
+  &__title
+    color: #ff6633
+    text-transform: uppercase
+    font-size: 32px
+    text-align: center
+    height: 100px
+    line-height: 100px
+    border-top: 1px solid #999999
+    font-family: $osw
+  &__link
+    padding: 0
+    &:hover &-hover
+      display: block
+    &:hover &-show
+      display: block
+    &-hover
+      display: none
+      position: absolute
+      top: 0
+      left: 50%
+      margin-left: -147px
+      width: 294px
+      height: 250px
+      background-color: #eee
+      opacity: 0.8
+      z-index: 1
+    a
+      display: none
+      width: 150px
+      height: 40px
+      background-color: #ff6633
+      color: #fff
+      z-index: 5
+      margin: 0 auto
+      position: absolute
+      text-transform: uppercase
+      line-height: 40px
+      top: 50%
+      left: 50%
+      margin-top: -20px
+      margin-left: -75px
+      border-radius: 5px
+      text-align: center
+.about
+  overflow: hidden
+  &__title
+    color: #ff6633
+    text-transform: uppercase
+    font-size: 32px
+    text-align: center
+    height: 100px
+    line-height: 100px
+    border-bottom: 1px solid #999999
+    font-family: $osw
+  &-container
+    .workers
+      width: $main-width
+      margin: 0 auto
+      list-style: none
+      margin-top: 65px
+      margin-bottom: 65px
+      li.active .worker__triangle
+        display: block
+    .col-md-8
+      width: 305px
+    .worker
+      cursor: pointer
+      &__triangle
+        display: none
+        position: absolute
+        top: 283px
+        left: 105px
+      &-info
+        background-color: #ff6633
+        display: none
+        padding: 50px 0
+        &__name
+          font-family: $osw
+          font-size: 22px
+          color: #fff
+        &__description
+          font-family: Arial
+          font-size: 16px
+          color: #fff
+          margin: 30px 0
+        &__title
+          font-family: $osw
+          font-size: 22px
+          color: #fff
+        &__socials
+          a
+            margin-left: 20px
+        &__skills
+          margin-top: 20px
+          p
+            font-family: Arial
+            font-size: 16px
+            color: #fff
+            text-transform: uppercase
+            text-align: right
+          span
+            display: inline-block
+            width: 100px
+            height: 10px
+            background-image: url(../img/skills.jpg)
+            margin-right: 30px
+            margin-top: 5px
+          .skill-1
+            width: 200px
+            float: left
+          .skill-2
+            width: 190px
+            float: left
+          .skill-3
+            width: 160px
+            float: left
+          .skill-4
+            width: 150px
+            float: left
+          .skill-5
+            width: 136px
+            float: left
+        &-container
+          width: $main-width
+          margin: 0 auto
+        &.active
+          display: block
+.latest-posts
+  &-container
+    width: $main-width
+    margin: 0 auto
+    margin-top: 65px
+    margin-bottom: 65px
+  &__title
+    color: #ff6633
+    text-transform: uppercase
+    font-size: 32px
+    text-align: center
+    border-bottom: 1px solid #999999
+    height: 100px
+    line-height: 100px
+    font-family: $osw
+  .post
+    &__img
+      float: left
+      margin: 20px
+    &__title
+      font-family: $osw
+      font-size: 25px
+      color: #333
+      text-transform: uppercase
+      margin-top: 30px
+      transition: 0.3s
+    &__date
+      font-family: $osw
+      font-size: 15px
+      color: #666
+      text-transform: uppercase
+    &__text
+      color: #333
+    a
+      &:hover
+        .post__title
+          color: #f63
+          transition: 0.3s
+.contact
+  &__title
+    color: #ff6633
+    text-transform: uppercase
+    font-size: 32px
+    text-align: center
+    border-top: 1px solid #999999
+    height: 100px
+    line-height: 100px
+    font-family: $osw
+  &-container
+    width: 100%
+    height: 530px
+    background-image: url(../img/footer-bg.jpg)
+    background-size: cover
+    &__button
+      font-family: $osw
+      font-size: 26px
+      color: #fff!important
+      border: none
+      display: block
+      margin: 20px auto
+      width: 1140px!important
+      background-color: #ff6633
+      border-radius: 5px
+      background-color: #ff6633
+      -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75)
+      -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75)
+      box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75)
+      transition: 0.3s
+      text-shadow: 0px 0px 3px rgba(0, 0, 0, 1)
+      &:hover
+        -webkit-box-shadow: 0px 0px 15px 1px rgba(255,255,255,0.75)
+        -moz-box-shadow: 0px 0px 15px 1px rgba(255,255,255,0.75)
+        box-shadow: 0px 0px 15px 1px rgba(255,255,255,0.75)
+        color: #fff
+        transition: 0.3s
+      &:focus
+        color: #fff
+    &-form
+      width: $main-width
+      margin: 0 auto
+      padding-top: 50px
+      ::-webkit-input-placeholder
+        color:#ff6633
+        font-size: 20px
+        font-style: italic
+      ::-moz-placeholder
+        color:#ff6633
+        font-size: 20px
+        font-style: italic
+      :-moz-placeholder
+        color:#ff6633
+        font-size: 20px
+        font-style: italic
+      :-ms-input-placeholder
+        color:#ff6633
+        font-size: 20px
+        font-style: italic
+      input
+        width: 100%
+        height: 58px
+        outline: none
+        margin-bottom: 20px
+        padding-left: 20px
+        font-size: 20px
+        color: #333
+      textarea
+        display: block
+        margin: 0 auto
+        max-width: 1140px
+        min-width: 1140px
+        min-height: 228px
+        max-height: 228px
+        outline: none
+        padding-left: 20px
+        padding-top: 20px
+        font-size: 20px
+        color: #333
+.footer
+  border-top: 1px solid #fff
+  p
+    color: #fff
+    font-family: Arial
+    font-size: 18px
+    text-align: center
+    margin-top: 30px
+
+@media (max-width: 1170px)
+  .header, .services, .portfolio, .about, .latest-posts, .contact
+    position: relative
+    overflow: hidden
+  .header
+    &__menu
+      width: 95%
+      padding-left: 5px
+  .services
+    .service
+      &__text
+        width: 100%
+    &-container
+      width: 95%
+  .portfolio
+    &-container
+      width: 95%
+      .portfolio__link
+        overflow: hidden
+        img
+          width: 100%
+          max-height: 410px
+        div
+          width: 100%
+          margin-left: -50%
+          height: 100%
+  .about
+    &-container
+      margin: 0
+      .worker-info
+        &-container
+          width: 100vw
+      .workers
+        width: 95%
+        padding: 0
+      .worker
+        & img:first-child
+          width: 150px
+        &-container
+          width: 95%
+  .latest-posts
+    &-container
+      width: 95%
+  .contact
+    &-container
+      &__button
+        width: 95%!important
+      &-form
+        width: 95%
+        textarea
+          max-width: 95%
+          min-width: 95%
+@media (max-width: 1024px)
+  .header
+    &__title
+      font-size: 94px
+  .about-container
+    .worker
+      &__triangle
+        top: 214px
+        left: 70px
+      &-info
+        &__skills
+          .skill-1
+            width: 100px
+          .skill-2
+            width: 95px
+          .skill-3
+            width: 80px
+          .skill-4
+            width: 75px
+          .skill-5
+            width: 68px
+  .portfolio
+    &-container
+      .portfolio__link
+        img
+          max-height: 315px
+
+@media (max-width: 767px)
+  .header
+    width: 100%
+    &__open
+      display: block
+      position: absolute
+      top: 45px
+      right: 45px
+    &__nav
+      display: none
+    &__title
+      font-size: 80px
+  .services
+    .service
+      margin-top: 20px
+      &__text
+        width: 300px
+  .portfolio__link
+    img
+      display: block
+      margin: 0 auto
+      max-height: 100%
+  .worker-info
+    &__description
+      padding: 0 20px
+    &__skills
+      padding: 0 13px
+  .about-container
+    width: 100%
+  .contact-container
+    height: 600px
+    background-position: top center
+  .about-container
+    .worker
+      &__triangle
+        top: 214px
+        left: 70px
+      &-info
+        &__skills
+          .skill-1
+            width: 200px
+          .skill-2
+            width: 190px
+          .skill-3
+            width: 160px
+          .skill-4
+            width: 150px
+          .skill-5
+            width: 136px
+@media (max-width: 479px)
+  .header
+    &__title
+      font-size: 50px
+  .services
+    .service
+      &__text
+        width: 284px
+  .about
+    &-container
+      .workers
+        padding: 0
+        margin: 20px auto
+        width: 80%
+      .worker
+        padding: 0
+        &-info
+          &__right-col
+            margin-top: 30px
+          &__skills
+            padding: 0
+            margin: 0
+            span
+              margin-left: 20px
+            .skill-1
+              width: 100px
+            .skill-2
+              width: 95px
+            .skill-3
+              width: 80px
+            .skill-4
+              width: 75px
+            .skill-5
+              width: 68px
+        &__triangle
+          top: 120px
+          left: 30px
+        & img:first-child
+          width: 100px
