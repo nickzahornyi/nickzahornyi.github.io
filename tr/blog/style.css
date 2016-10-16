@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 80vw;
+  height: 80vh;
+  background-color: black;
+  opacity: 0.8;
+  margin: 0 auto;
+  position: relative;
+  top: 50vh;
+  margin-top: -40vh;
+}
+.nav {
+  width: 30%;
+  height: 100%;
+  border-right: 1px solid #fff;
+  float: left;
+}
+.nav ol{
+  margin-left: 50px;
+  padding-top: 50px;
+  color: #fff;
+}
+.nav a{
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+.articles{
+  width: 69%;
+  height: 100%;
+  float: right;
+  color: #fff;
+  overflow-y: auto;
+}
