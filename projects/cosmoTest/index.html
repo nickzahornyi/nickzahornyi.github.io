@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>05</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="header clearfix">
+        <div class="wrapper">
+            <div class="header__top clearfix">
+                <h1 class="header__logo">
+            <a href="#">
+              <img src="img/logo.png" alt="logo">
+            </a>
+          </h1>
+                <ul class="header__menu-desktop">
+                    <li class="active"><a href="#">главная</a></li>
+                    <li><a href="#">партнеры и акции</a></li>
+                    <li><a href="#">промокоды</a></li>
+                    <li><a href="#">новости</a></li>
+                    <li><a href="#">держателям карт</a></li>
+                </ul>
+                <img class="mob-menu-button" src="img/menu-button-white.png" alt="menu">
+                <ul class="header__menu-mobile">
+                    <li class="active"><a href="#">главная</a></li>
+                    <li><a href="#">партнеры и акции</a></li>
+                    <li><a href="#">промокоды</a></li>
+                    <li><a href="#">новости</a></li>
+                    <li><a href="#">держателям карт</a></li>
+                </ul>
+                <div class="header-callback">
+                    <img src="img/phone.png" alt="phone">
+                    <span class="header-callback__number">+38 (093) 500 50 50</span>
+                    <p class="header-callback__button">перезвоните мне</p>
+                </div>
+            </div>
+            <div class="header__info">
+                <h2 class="header__title">лучшие <span>возможности твоего города в одной карте</span></h2>
+                <p class="header__text">Получайте до 30% скидки в сотнях магазинов и заведений Вашего города с универсальной картой скидок о5рекомендует</p>
+                <div class="select">
+                    <img class="header__select-arrow" src="img/select-arrow.png" alt="select-arrow">
+                    <span>Киев</span>
+                    <div class="cities-wrapper">
+                        <div class="cities">
+                            <ul class="cities__list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="header__hand" src="img/hand.png" alt="hand with card">
+            <a href="#how-it-works"><img class="header__arrow" src="img/arrow.png" alt="arrow"></a>
+        </div>
+    </header>
+    <div class="callback-modal-wrapper">
+        <div class="callback-modal">
+            <img src="img/close.png" alt="close">
+            <label for="name">Имя:</label>
+            <input id="name" type="text">
+            <label for="phone">Контактный телефон:</label>
+            <input id="phone" type="text">
+            <button type="button" name="button">Отправить</button>
+        </div>
+    </div>
+    <section class="how-it-works">
+        <a id="how-it-works"></a>
+        <h2 class="how-it-works__title">как это <span>работает</span></h2>
+        <div class="how-it-works__video">
+            <iframe class="iframe" width="480" height="300" src="https://www.youtube.com/embed/hS5CfP8n_js" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section class="get-card clearfix">
+        <h2 class="get-card__title">еще нет карты 05рекомендует?</h2>
+        <p class="get-card__text1">Оставь заявку и получи карту в течение 24 часов</p>
+        <p class="get-card__text2">Единоразовый платеж за получение карты - <span>1599 UAH.</span></p>
+        <p class="get-card__text3">С промокодом - <span>999 UAH.</span></p>
+    </section>
+    <section class="order-form wrapper clearfix">
+        <h2 class="order-form__title"><span>заказать</span> персональную карту 05рекомендует</h2>
+        <img class="order-form__arrow" src="img/arrow-black.png" alt="arrow">
+        <div class="choose-card">
+            <img class="big-card red active" src="img/card-big1.png" alt="big card">
+            <img class="big-card blue" src="img/card-big2.png" alt="big card">
+            <img class="big-card orange" src="img/card-big3.png" alt="big card">
+            <div class="cards-menu">
+                <p class="cards-menu__title">Выберите дизайн карты:</p>
+                <div class="cards-menu__items">
+                    <img class="small-card red" src="img/card1.png" alt="small card">
+                    <img class="small-card blue" src="img/card2.png" alt="small card">
+                    <img class="small-card orange" src="img/card3.png" alt="small card">
+                </div>
+            </div>
+        </div>
+        <div class="form clearfix">
+            <form action="index.php">
+                <div class="textfield textfield--floatingLabel form-first-name">
+                    <p class="form__img name"></p>
+                    <input class="textfield__input" type="text" required="required" id="firstName" onblur="validateFirstName(this);" />
+                    <label class="textfield__label" for="firstName">Имя</label>
+                </div>
+                <div class="textfield textfield--floatingLabel form-last-name">
+                    <p class="form__img name"></p>
+                    <input class="textfield__input" type="text" required="required" id="lastName" onblur="validateLastName(this);" />
+                    <label class="textfield__label" for="lastName">Фамилия</label>
+                </div>
+                <div class="textfield textfield--floatingLabel form-email">
+                    <p class="form__img email"></p>
+                    <input class="textfield__input" type="text" required="required" id="email" onblur="validateEmail(this);" />
+                    <label class="textfield__label" for="email">Email</label>
+                </div>
+                <div class="form__phone">
+                    <div class="textfield phone1 textfield--floatingLabel form-phone">
+                        <p class="form__img phone"></p>
+                        <input class="textfield__input" type="text" required="required" id="phone1" placeholder="+38" onblur="validatePhone1(this);" />
+                        <label class="textfield__label" for="phone1"> </label>
+                    </div>
+                    <div class="textfield phone2 textfield--floatingLabel">
+                        <input class="textfield__input" type="text" required="required" id="phone2" onblur="validatePhone2(this);" />
+                        <label class="textfield__label" for="phone2"> </label>
+                    </div>
+                    <div class="textfield phone3 textfield--floatingLabel">
+                        <input class="textfield__input" type="text" required="required" id="phone3" onblur="validatePhone3(this);" />
+                        <label class="textfield__label" for="phone3">Телефон</label>
+                    </div>
+                </div>
+                <div class="form__radio">
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Муж.</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Жен.</label>
+                </div>
+                <div class="form__date">
+                    <div class="textfield phone1 textfield--floatingLabel form-date">
+                        <p class="form__img date"></p>
+                        <input class="textfield__input" type="text" required="required" id="day" placeholder="дд" onblur="validateDay(this);" />
+                    </div>
+                    <div class="textfield phone2 textfield--floatingLabel">
+                        <input class="textfield__input" type="text" required="required" id="month" placeholder="мм" onblur="validateMonth(this);" />
+                    </div>
+                    <div class="textfield phone3 textfield--floatingLabel">
+                        <input class="textfield__input" type="text" required="required" id="year" onblur="validateYear(this);" />
+                        <label class="textfield__label" for="year">Дата рождения</label>
+                    </div>
+                </div>
+                <div class="textfield textfield--floatingLabel">
+                    <p class="form__img promo"></p>
+                    <input class="textfield__input" type="text" required="required" id="promo" />
+                    <label class="textfield__label" for="promo">Промокод</label>
+                </div>
+                <div class="textfield textfield--floatingLabel form-payment">
+                    <p class="form__img payment"></p>
+                    <input class="textfield__input" type="text" required="required" id="payment" />
+                    <label class="textfield__label" for="payment">Выбор способа оплаты</label>
+                </div>
+                <div class="payment-type">
+                    <ul>
+                        <li>Visa</li>
+                        <li>Master Card</li>
+                        <li>PayPal</li>
+                        <li>WebMoney</li>
+                        <li>Privat24</li>
+                    </ul>
+                </div>
+                <input class="form-hidden" type="hidden" value="red">
+                <p class="form__submit"><img src="img/footer-button-mark.png" alt="mark">xочу карту о5рекомендует!</p>
+            </form>
+        </div>
+        <div class="shares">
+            <p class="shares__title">Акция: 1+1 = 3</p>
+            <p class="shares__text">Приобретая 2 карты получайте третью <span>В ПОДАРОК!*</span></p>
+            <p class="shares__desc">*Акция не ограничена во времени и действует на постоянной основе</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-wrapper"></div>
+    </footer>
+    <script src="libs/jquery-3.1.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
