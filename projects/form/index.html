@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1 class="logo">
+        <a href="">
+          <img class="logo-img" src="img/logo-img.png" alt="logo-img">
+          <img class="logo-text" src="img/logo-text.png" alt="logo-text">
+        </a>
+      </h1>
+            <form class="form">
+                <input class="job" type="text" placeholder="Должность">
+                <span class="job-example">Например: водитель маршрутки</span>
+                <ul class="jobs"></ul>
+                <input class="city" type="text" placeholder="Город, регион, область">
+                <span class="city-example">(введите первые буквы города)</span>
+                <ul class="cities"></ul>
+                <div class="button">
+                    <button>Найти вакансии</button>
+                    <img class="preloader" src="img/preloader.gif" alt="preloader">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

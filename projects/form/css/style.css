@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+body {
+    overflow-x: hidden;
+    height: 2000px;
+}
+.main {
+    position: fixed;
+    top: 50vh;
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    margin-top: -69px;
+    font-family: 'Open Sans';
+}
+.container {
+    position: relative;
+    left: 50%;
+    display: inline-block;
+    margin: auto;
+    transform: translateX(-50%);
+}
+.logo {
+    display: inline-block;
+    visibility: hidden;
+    float: left;
+    margin-right: 10px;
+}
+.logo a {
+    display: block;
+    text-decoration: none;
+}
+.logo img {
+    display: block;
+    margin: 0 auto;
+    margin-top: -2px;
+}
+img.logo-img {
+    margin-top: 4px;
+    margin-left: 8px;
+}
+.form {
+    display: inline-block;
+    float: right;
+    margin-top: 55px;
+    margin-left: 20px;
+}
+.form input {
+    visibility: hidden;
+    width: 316px;
+    height: 42px;
+    margin-right: 8px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    color: #55555a;
+    border: 1px solid #d7d7d7;
+    border-radius: 3px;
+    outline: none;
+    background-color: #f5f5f5;
+    box-shadow: inset 0px 10px 6px -10px #CCC;
+    font-size: 14px;
+}
+.form input::-webkit-input-placeholder {
+    color: #55555a;
+}
+.form input::-moz-placeholder {
+    color: #55555a;
+}
+.form input:-ms-input-placeholder {
+    color: #55555a;
+}
+.form button {
+    position: relative;
+    width: 170px;
+    height: 45px;
+    cursor: pointer;
+    color: #fff;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: #1c7ebc;
+    font-family: "Open Sans Bold";
+    font-size: 14px;
+}
+.button {
+    display: inline-block;
+    visibility: hidden;
+}
+.preloader {
+    position: relative;
+    top: 10px;
+    right: 50%;
+    visibility: hidden;
+}
+.job-example {
+    position: absolute;
+    top: 106px;
+    left: 157px;
+    visibility: hidden;
+    color: #a6a9ae;
+    font-size: 13px;
+    font-style: italic;
+}
+.city-example {
+    position: absolute;
+    top: 106px;
+    right: 340px;
+    visibility: hidden;
+    color: #a6a9ae;
+    font-size: 13px;
+    font-style: italic;
+}
+.cities {
+    position: absolute;
+    z-index: 10;
+    top: 87px;
+    right: 215px;
+    display: none;
+    overflow-y: auto;
+    width: 338px;
+    height: auto;
+    max-height: 208px;
+    padding-left: 0;
+    background-color: #f5f5f5;
+}
+.cities li, .jobs li {
+    height: 25px;    padding-left: 10px;
+    list-style: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: #55555a;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    line-height: 25px;
+}
+.jobs {
+    position: absolute;
+    z-index: 10;
+    top: 87px;
+    display: none;
+    overflow-y: auto;
+    width: 338px;
+    height: auto;
+    max-height: 208px;
+    padding-left: 0;
+    background-color: #f5f5f5;
+}
+@media (max-width: 1058px) {
+    .container {
+        width: 100%;
+    }
+    .logo {
+        width: 10%;
+        margin-left: 45px;
+    }
+    .logo img {
+        width: 80px;
+    }
+    .form {
+        float: left;
+        width: 80%;
+        margin-top: 40px;
+    }
+    .form input {
+        width: 33%;
+        padding-left: 10px;
+    }
+    .jobs {
+        top: 72px;
+        width: 27.5%;
+    }
+    .cities {
+        top: 72px;
+        right: 0;
+        left: 34%;
+        width: 27.5%;
+        margin-left: 120px;
+    }
+    .form button {
+        position: relative;
+        overflow: hidden;
+        width: 112px;
+        padding: 10px 0;
+        line-height: 26px;
+    }
+    .job-example {
+        top: 90px;
+        left: 20%;
+        overflow: hidden;
+        width: 150px;
+        height: 20px;
+    }
+    .city-example {
+        top: 90px;
+        right: 0;
+        left: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .main {
+        top: 95px;
+    }
+    .logo {
+        float: none;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .form {
+        display: block;
+        float: none;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .form input {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .jobs {
+        top: 87px;
+        width: 80%;
+    }
+    .cities {
+        top: 175px;
+        right: 0;
+        left: 10%;
+        width: 80%;
+        margin: 0;
+    }
+    .button {
+        display: block;
+        width: 100%;
+    }
+    .button button {
+        width: 100%;
+    }
+    .preloader {
+        top: -36px;
+        right: -48%;
+    }
+    .form button {
+        padding: 10px 40%;
+    }
+    .job-example, .city-example, img.logo-img {
+        display: none;
+    }
+}
