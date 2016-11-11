@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frontend test task</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="header-logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="logo">
+        </a>
+      </h1>
+            <nav class="header-nav">
+                <ul class="desktop">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Мои покупки</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Войти/Выйти</a></li>
+                </ul>
+                <img class="menu-button" src="img/menu.png" alt="menu">
+                <ul class="mobile">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Мои покупки</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Войти/Выйти</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="log-in">
+                <img src="img/form-img.png" alt="form-img">
+                <h3 class="log-in__title">Авторизация</h3>
+                <a href="#" class="register-link">Зарегистрироваться</a>
+                <form class="form">
+                    <div class="email">
+                        <label class="email-label" for="email">Email <span class="required">*</span></label>
+                        <input id="email" class="text-field" type="email" required>
+                    </div>
+                    <div class="password">
+                        <label class="pass-label" for="password">Пароль <span class="required">*</span></label>
+                        <input id="password" placeholder="" class="text-field" type="password" required>
+                    </div>
+                    <div class="help">
+                        <input type="checkbox" id="remember">
+                        <label for="remember" class="remember">Запомнить меня</label>
+                        <p>Забыли пароль? <a href="#">Возобновить</a></p>
+                    </div>
+                    <input class="submit-button" type="submit" value="Вход">
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+        var windowWidth = $(window).width();
+        if (windowWidth <= 480) {
+            $(".email-label").css("display", "none");
+            $(".pass-label").css("display", "none");
+            $("#email").attr("placeholder", "Email");
+            $("#password").attr("placeholder", "Пароль");
+        }
+        $(".menu-button").click(function() {
+            $(".header-nav .mobile").fadeToggle("fast");
+        })
+    </script>
+</body>
+
+</html>
