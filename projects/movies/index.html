@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Movie Search</title>
+  <link rel="stylesheet" href="libs/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- <form class="form">
+        <input type="text">
+        <input type="submit" class="form__submit">
+    </form> -->
+  <div class="container">
+    <!-- form -->
+    <form class="form" id="form">
+      <div class="form-row align-items-center justify-content-center">
+        <div class="col-sm-3">
+          <label class="sr-only" for="inlineFormInputName">Name</label>
+          <input type="text" class="form-control mb-2 mb-sm-0" id="inlineFormInputName" placeholder="Find you favourite movie">
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="page-info form-row align-items-center hidden">
+          <p>Page</p>
+          <select id="pager" class="form-control">
+          </select>
+          <p>from <span class="all-pages">555</span></p>
+        </div>
+      </div>
+    </form>
+    <!-- table -->
+    <table class="table table-striped" id="table">
+      <thead class="thead-default">
+        <tr class="table-categories">
+          <th data-sort="id" data-sort-by="number" data-sorted-up="null">ID<i class="fa"></i></th>
+          <th data-sort="title" data-sort-by="alphabet" data-sorted-up="null">Title<i class="fa"></i></th>
+          <th data-sort="original_language" data-sort-by="alphabet" data-sorted-up="null">Language<i class="fa"></i></th>
+          <th data-sort="popularity" data-sort-by="number" data-sorted-up="null">Popularity Index<i class="fa"></i></th>
+          <th data-sort="vote_count" data-sort-by="number" data-sorted-up="null">Votes Count<i class="fa"></i></th>
+          <th data-sort="vote_average" data-sort-by="number" data-sorted-up="null">Rating<i class="fa"></i></th>
+          <th data-sort="release_date" data-sort-by="alphabet" data-sorted-up="null">Release Date<i class="fa"></i></th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
