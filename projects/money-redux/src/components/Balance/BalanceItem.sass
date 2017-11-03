@@ -1,0 +1,86 @@
+.mdl-list__item-primary-content
+  border-bottom: 1px solid #c0bdbd
+  padding: 15px 0
+  span
+    display: block
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.mdl-list__item-icon, .mdl-list__item-icon.material-icons
+  border: 1px solid #000
+  box-sizing: border-box
+  border-radius: 50%
+  width: 50px
+  min-width: 50px
+  height: 50px
+  font-size: 25px
+  display: flex
+  justify-content: center
+  align-items: center
+
+.mdl-list
+  padding-bottom: 0
+  padding-top: 0
+  margin-top: 0
+  border-top: 5px solid #c1c1c1
+  &__item
+    padding-top: 0
+    padding-bottom: 0
+    &:last-child
+      padding-bottom: 8px
+      span
+        border-bottom: 0
+
+.mdl-list__item-primary-content
+  &.directions_bike 
+    & > i
+      border-color: blue
+      background: blue
+      color: #fff
+  &.restaurant 
+    & > i
+      border-color: #8b00ff
+      background: #8b00ff
+      color: #fff
+  &.shopping_basket 
+    & > i
+      border-color: #ffaa00
+      background: #ffaa00
+      color: #fff
+  &.money_off 
+    & > i
+      border-color: #ef0722
+      background: #ef0722
+      color: #fff
+  &.attach_money 
+    & > i
+      border-color: green
+      background: green
+      color: #fff
+
+
+.mdl-tooltip
+  &.is-active
+    display: block
+    font-size: 16px
+.balance-item
+  &__income
+    color: green
+    font-size: 24px
+    font-weight: bold
+    margin-bottom: 0
+  &__expenditure
+    color: red 
+    font-size: 24px
+    font-weight: bold 
+    margin-bottom: 0
+  &__name
+    font-size: 24px
+    font-weight: bold
+  &__date
+    font-size: 17px
+    color: #858181
+    font-weight: bold
+    margin-bottom: 0
